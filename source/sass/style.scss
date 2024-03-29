@@ -1,31 +1,31 @@
 //добавляет миксины и переменные
-@import './mixins.scss';
-@import './variables.scss';
+@import "./mixins.scss";
+@import "./variables.scss";
 
 // базовые стили
-@import './basis/fonts.scss';
-@import './basis/visually-hidden.scss';
-@import './basis/base.scss';
-@import './basis/button.scss';
+@import "./basis/fonts.scss";
+@import "./basis/visually-hidden.scss";
+@import "./basis/base.scss";
+@import "./basis/button.scss";
 
 // Стили блоков
-@import './block/page.scss';
-@import './block/main-header.scss';
-@import './block/burger-menu.scss';
-@import './block/main-navigation.scss';
-@import './block/promo.scss';
-@import './block/nutrition.scss';
-@import './block/advantages.scss';
-@import './block/price.scss';
-@import './block/location.scss';
-@import './block/main-footer.scss';
+@import "./block/page.scss";
+@import "./block/main-header.scss";
+@import "./block/burger-menu.scss";
+@import "./block/main-navigation.scss";
+@import "./block/promo.scss";
+@import "./block/nutrition.scss";
+@import "./block/advantages.scss";
+@import "./block/price.scss";
+@import "./block/location.scss";
+@import "./block/main-footer.scss";
 
 // Стили для страницы с формой
-@import './block/program-selection.scss';
-@import './block/form.scss';
-@import './block/fieldset.scss';
+@import "./block/program-selection.scss";
+@import "./block/form.scss";
+@import "./block/fieldset.scss";
 
 // Стили для страницы с каталогом
-@import './block/catalog.scss';
-@import './block/product.scss';
-@import './block/additional-products.scss';
+@import "./block/catalog.scss";
+@import "./block/product.scss";
+@import "./block/additional-products.scss";

@@ -13,6 +13,8 @@
   line-height: 16px;
   font-weight: 400;
   color: $text-color_4;
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
 }
 
 .product__link {
@@ -23,11 +25,6 @@
 .product__button {
   display: grid;
   grid-column: span 2;
-}
-
-.product__text {
-  display: grid;
-  grid-template-columns: repeat(2,70px);
 }
 
 .product__subtitle--all-product {

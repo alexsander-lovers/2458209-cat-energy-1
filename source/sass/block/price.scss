@@ -41,7 +41,7 @@
   color: $text-color;
 }
 
-.price__item-text::before  {
+.price__item-text::before {
   content: "";
   position: absolute;
   background-image: url("/img/frame.svg");
@@ -94,7 +94,7 @@
   min-height: 256px;
 }
 
-.price-range::before  {
+.price-range::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -121,4 +121,3 @@
   top: 18px;
   left: 12px;
 }
-

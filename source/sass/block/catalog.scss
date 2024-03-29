@@ -23,9 +23,9 @@
 
 .catalog__item {
   display: grid;
-  grid-template-columns: repeat(2,140px);
+  grid-template-columns: repeat(2, 140px);
   align-items: center;
-  gap: 20px 0px;
+  gap: 20px 0;
   position: relative;
 }
 
