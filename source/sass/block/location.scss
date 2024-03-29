@@ -1,15 +1,10 @@
-.location {
-  width: 320px;
-}
-
-.location__wrapper {
+.container--location {
   display: flex;
   align-items: center;
-  margin-top: 35px;
   padding: 26px 20px 26px 20px;
 }
 
-.location__wrapper--another-background {
+.location--another-background {
   background-color: $a-bg-color;
 }
 
@@ -30,4 +25,9 @@
   text-decoration: none;
   color: $text-color_4;
   text-transform: uppercase;
+}
+
+.location__image {
+  width: 100%;
+  object-fit: inherit;
 }

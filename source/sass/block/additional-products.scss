@@ -1,9 +1,12 @@
-.additional-products {
+.container--additional-products {
+  padding: 20px 20px 35px 20px;
   width: 320px;
 }
 
 .additional-products__promo {
   position: relative;
+  min-height: 290px;
+  width: 280px;
 }
 
 .additional-products__promo::after {
@@ -86,7 +89,7 @@
   width: 54px;
   border: solid 2px $btn-bg-color;
   top: 15px;
-  right: -20px;
+  right: 20px;
 }
 
 .additional-products__item-subtitle {

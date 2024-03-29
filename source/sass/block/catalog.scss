@@ -1,4 +1,5 @@
-.catalog {
+.container--catalog {
+  padding: 20px;
   width: 320px;
 }
 
@@ -57,7 +58,6 @@
   cursor: pointer;
   border: none;
 }
-
 
 .catalog__item--all-product::before {
   content: "";

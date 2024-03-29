@@ -1,7 +1,9 @@
 .main-header {
-padding: 13px 21px;
 position: relative;
-border-bottom: 1px solid $n-bg-color;
+}
+
+.container--header {
+  padding: 13px 21px;
 }
 
 .main-header-list {
@@ -14,4 +16,19 @@ border-bottom: 1px solid $n-bg-color;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-header__navigation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+
+.main-header__navigation-wrapper.active {
+  transform: translateX(0);
+  z-index: 4;
+  transition: transform 0.5s;
 }

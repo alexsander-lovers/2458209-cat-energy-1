@@ -1,20 +1,6 @@
 .promo {
-  width: 320px;
   color: $bg-color;
   position: relative;
-}
-
-.promo::before {
-  content: "";
-  background-image: url("/img/chicken-food-cats.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  top: 167px;
-  left: 20px;
-  width: 280px;
-  height: 270px;
-  z-index: 3;
 }
 
 .promo__wrapper {
@@ -57,6 +43,19 @@
   font-family: $font;
   position: absolute;
   z-index: 4;
+}
+
+.promo__title::before {
+  content: "";
+  background-image: url("/img/chicken-food-cats.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
+  z-index: 3;
 }
 
 .promo__text {
