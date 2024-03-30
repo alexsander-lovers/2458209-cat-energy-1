@@ -8,6 +8,15 @@
 @import "./basis/base.scss";
 @import "./basis/button.scss";
 
+// Контейнеры
+@import "./block/container.scss";
+@import "./block/container--additional-products.scss";
+@import "./block/container--catalog.scss";
+@import "./block/container--location.scss";
+@import "./block/container--header .scss";
+@import "./block/container--anoter .scss";
+
+
 // Стили блоков
 @import "./block/page.scss";
 @import "./block/main-header.scss";
@@ -17,6 +26,7 @@
 @import "./block/nutrition.scss";
 @import "./block/advantages.scss";
 @import "./block/price.scss";
+@import "./block/price-range.scss";
 @import "./block/location.scss";
 @import "./block/main-footer.scss";
 

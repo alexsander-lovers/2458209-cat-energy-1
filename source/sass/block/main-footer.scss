@@ -71,12 +71,3 @@
   text-decoration: none;
   color: $text-color_4;
 }
-
-.nutrition__text::after {
-  content: "";
-  position: absolute;
-  width: 240px;
-  border: solid 1px $n-bg-color;
-  bottom: -20px;
-  left: 0;
-}

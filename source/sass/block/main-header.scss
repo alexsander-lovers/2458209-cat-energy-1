@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.container--header {
-  padding: 13px 21px;
-}
-
 .main-header-list {
   @include list-reset;
   display: flex;

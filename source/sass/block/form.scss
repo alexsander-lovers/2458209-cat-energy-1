@@ -22,3 +22,25 @@
   padding-top: 20px;
   font-weight: 400;
 }
+
+.form__fieldset-border {
+  position: relative;
+}
+
+.form__fieldset-border::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  border: 1px solid $n-bg-color;
+  top: -20px;
+  left: -20px;
+}
+
+.form__fieldset-border::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  border: 1px solid $n-bg-color;
+  bottom: -20px;
+  left: -20px;
+}
