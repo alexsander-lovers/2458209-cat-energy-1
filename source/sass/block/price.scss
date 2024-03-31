@@ -1,0 +1,88 @@
+.price {
+  background-color: $price-bg-color;
+}
+
+.price-wrapper {
+  padding: 25px 20px 40px 20px;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.price__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 11px 22px 0 35px;
+}
+
+.price__item-wrapper-size {
+  padding: 11px 22px 0 22px;
+}
+
+.price__item-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 7px;
+  font-family: $font;
+  text-align: center;
+  color: $text-color;
+}
+
+.price__item-desckription {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $text-color;
+}
+
+.price__item-text::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/frame.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 124px;
+  height: 56px;
+}
+
+.price__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-family: $font;
+  color: $text-color;
+}
+
+.price__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.price__title-nutrition {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-family: $font;
+  text-align: center;
+  color: $text-color;
+}
+
+.price__desckription {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font;
+  color: $text-color;
+}

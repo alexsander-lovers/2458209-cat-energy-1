@@ -1,0 +1,45 @@
+.product__subtitle {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $font;
+  color: $text-color_2;
+}
+
+.product__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color_4;
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
+}
+
+.product__link {
+  display: grid;
+  justify-items: center;
+}
+
+.product__button {
+  display: grid;
+  grid-column: span 2;
+}
+
+.product__subtitle--all-product {
+  margin-top: 78px;
+  margin-bottom: 8px;
+}
+
+.product__text--all-product {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.product__button--all-cards {
+  background-color: $a-bg-color;
+  color: $text-color_4;
+  padding: 10px 95px;
+}

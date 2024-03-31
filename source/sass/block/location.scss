@@ -1,0 +1,27 @@
+.location--another-background {
+  background-color: $a-bg-color;
+}
+
+.location__title {
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $font;
+  color: $text-color_1;
+}
+
+.location__link {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $text-color_4;
+  text-transform: uppercase;
+}
+
+.location__image {
+  width: 100%;
+  object-fit: inherit;
+}

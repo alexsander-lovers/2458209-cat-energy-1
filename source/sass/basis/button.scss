@@ -1,0 +1,15 @@
+.button {
+  padding: 10px 64px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg-color;
+  display: inline-block;
+  background-color: $btn-bg-color;
+  border: none;
+  font-family: $font;
+  cursor: pointer;
+}

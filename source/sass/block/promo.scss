@@ -1,0 +1,76 @@
+.promo {
+  color: $bg-color;
+  position: relative;
+}
+
+.promo__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.promo__wrapper::after {
+  content: "";
+  background-image: url("/img/photo-cat-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+}
+
+.promo__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+  background-color: $btn-bg-color;
+  z-index: 4;
+  opacity: 0.85;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: $font;
+  position: absolute;
+  z-index: 4;
+}
+
+.promo__title::before {
+  content: "";
+  background-image: url("/img/chicken-food-cats.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
+  z-index: 3;
+}
+
+.promo__text {
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 4;
+  top: 123px;
+  right: 60px;
+}
+
+.promo__button {
+  margin-left: 20px;
+  margin-top: 430px;
+}

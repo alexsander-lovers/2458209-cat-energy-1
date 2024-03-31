@@ -1,0 +1,121 @@
+.nutrition__item-wrapper {
+  background-color: $a-bg-color;
+  margin-bottom: 20px;
+}
+
+.nutrition__decoration-slim {
+  position: relative;
+}
+
+.nutrition__decoration-slim::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 14px;
+  width: 50px;
+  height: 50px;
+  background-color: $btn-bg-color;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.nutrition__decoration-slim::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/photo-slim.svg");
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 50px;
+  z-index: 1;
+}
+
+.nutrition__decoration-pro {
+  position: relative;
+}
+
+.nutrition__decoration-pro::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: $btn-bg-color;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.nutrition__decoration-pro::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/photo-pro.svg");
+  background-repeat: no-repeat;
+  top: 30px;
+  left: 20px;
+  width: 67px;
+  height: 28px;
+  z-index: 1;
+}
+
+.nutrition__title {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: $font;
+  color: $text-color;
+}
+
+.nutrition__title--pro {
+  margin-left: 47px;
+}
+
+.nutrition__text {
+  margin: 0;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 33px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  position: relative;
+}
+
+.nutrition__text::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  border: solid 1px $n-bg-color;
+  bottom: -20px;
+  left: 0;
+}
+
+.nutrition__link {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font;
+  text-decoration: none;
+  color: $text-color;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding-bottom: 22px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.nutrition__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/arrow.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  top: 4px;
+  left: 95px;
+}

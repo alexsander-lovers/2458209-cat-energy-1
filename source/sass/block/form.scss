@@ -1,0 +1,46 @@
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset--distance {
+  padding-bottom: 25px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__button {
+  padding: 10px 44px 10px 44px;
+}
+
+.form__text {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.form__fieldset-border {
+  position: relative;
+}
+
+.form__fieldset-border::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  border: 1px solid $n-bg-color;
+  top: -20px;
+  left: -20px;
+}
+
+.form__fieldset-border::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  border: 1px solid $n-bg-color;
+  bottom: -20px;
+  left: -20px;
+}
