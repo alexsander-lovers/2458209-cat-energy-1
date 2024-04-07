@@ -1,5 +1,28 @@
-
 .container {
   margin: 0 auto;
+  width: 320px;
+}
+
+.container--location {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px 26px 20px;
+}
+
+.container--header {
+  padding: 13px 21px;
+}
+
+.container--catalog {
+  padding: 20px;
+  width: 320px;
+}
+
+.container--anoter {
+  padding: 20px;
+}
+
+.container--additional-products {
+  padding: 20px 20px 35px 20px;
   width: 320px;
 }

@@ -8,17 +8,9 @@
 @import "./basis/base.scss";
 @import "./basis/button.scss";
 
-// Контейнеры
-@import "./block/container.scss";
-@import "./block/container--additional-products.scss";
-@import "./block/container--catalog.scss";
-@import "./block/container--location.scss";
-@import "./block/container--header .scss";
-@import "./block/container--anoter .scss";
-
-
 // Стили блоков
 @import "./block/page.scss";
+@import "./block/container.scss";
 @import "./block/main-header.scss";
 @import "./block/burger-menu.scss";
 @import "./block/main-navigation.scss";
