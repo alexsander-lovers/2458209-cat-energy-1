@@ -69,6 +69,10 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .nutrition__title--pro {

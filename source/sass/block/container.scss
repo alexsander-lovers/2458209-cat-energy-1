@@ -19,6 +19,14 @@
 
 .container--header {
   padding: 13px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 65px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .container--catalog {
@@ -28,6 +36,10 @@
 
 .container--anoter {
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 52px;
+  }
 }
 
 .container--additional-products {

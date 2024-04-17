@@ -1,23 +1,19 @@
 .promo {
   color: $bg-color;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 800px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+  }
 }
 
 .promo__wrapper {
   position: relative;
   z-index: 1;
-}
-
-.promo__wrapper::after {
-  content: "";
-  background-image: url("/img/photo-cat-1.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 320px;
-  height: 302px;
 }
 
 .promo__wrapper::before {
@@ -30,6 +26,26 @@
   background-color: $btn-bg-color;
   z-index: 4;
   opacity: 0.85;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo__wrapper::after {
+  content: "";
+  background-image: url("/img/photo-cat-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__title {
@@ -43,6 +59,14 @@
   font-family: $font;
   position: absolute;
   z-index: 4;
+
+  @media (min-width: $tablet-width) {
+    color: $text-color;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__title::before {
@@ -68,6 +92,12 @@
   z-index: 4;
   top: 123px;
   right: 60px;
+
+  @media (min-width: $tablet-width) {
+    color: $text-color;
+    top: 172px;
+    left: 0;
+  }
 }
 
 .promo__button {

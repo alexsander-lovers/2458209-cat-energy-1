@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
   z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .burger-menu .burger-menu__line {
