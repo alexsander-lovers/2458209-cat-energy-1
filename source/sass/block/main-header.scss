@@ -3,10 +3,12 @@
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
+    margin-bottom: 65px;
   }
 
-  @media (min-width: $desktop-width {
+  @media (min-width: $desktop-width) {
     min-height: 59px;
+    margin-bottom: 110px;
   }
 }
 
@@ -42,6 +44,10 @@
 
   @media (min-width: $tablet-width) {
     transform: translateX(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 2;
   }
 }
 

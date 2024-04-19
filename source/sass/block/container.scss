@@ -15,13 +15,58 @@
   display: flex;
   align-items: center;
   padding: 26px 20px 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 60px 70px;
+  }
 }
 
 .container--header {
   padding: 13px 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 34px 65px 30px;
+    padding: 25px 34px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0 110px;
+  }
+}
+
+.container--catalog {
+  padding: 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 110px 0 110px;
+  }
+}
+
+.container--nutrition {
+  padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.container--advantages {
+  padding: 20px;
+}
+
+.container--additional-products {
+  padding: 20px 20px 35px 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,20 +74,16 @@
   }
 }
 
-.container--catalog {
-  padding: 20px;
-  width: 320px;
-}
-
-.container--anoter {
-  padding: 20px;
+.container--form {
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 53px 52px;
+    width: $tablet-width;
+    padding: 0 70px;
   }
-}
 
-.container--additional-products {
-  padding: 20px 20px 35px 20px;
-  width: 320px;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
 }

@@ -2,6 +2,13 @@
   @include list-reset;
 }
 
+@media (min-width: $desktop-width) {
+  .fieldset__list--contact {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 .fieldset__item {
   margin-bottom: 14px;
 }
@@ -13,6 +20,12 @@
   font-family: $font;
   color: $text-color;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .fieldset__title-another {

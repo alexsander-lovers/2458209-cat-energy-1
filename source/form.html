@@ -38,8 +38,8 @@
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-navigation__item main-navigation__item--current">
-              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current main-navigation__link--current-border" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -47,64 +47,68 @@
     </header>
     <main class="main-container">
       <section class="program-selection">
-        <div class="container container--anoter">
+        <div class="container container--form">
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__wrapper">
-              <fieldset class="form__fieldset fieldset">
-                <legend class="fieldset__title"></legend>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Имя:*
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="Барсик" required>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Вес (кг):*
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7" required>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Возраст (лет):
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7">
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper">
-              <fieldset class="form__fieldset fieldset form__fieldset-border">
-                <legend class="fieldset__title"></legend>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Похудение" checked>
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Похудение</span>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Набор массы">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Набор массы</span>
-                    </label>
-                  </li>
+            <div class="form__wrapper-all">
+              <div class="form__wrapper">
+                <fieldset class="form__fieldset fieldset">
+                  <legend class="fieldset__title"></legend>
+                  <div class="fieldset__wrapper">
+                  <ul class="fieldset__list">
                     <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Не знаю (Нужен ваш совет)</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                      <label class="fieldset__label">Имя:*
+                        <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="Барсик" required>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">Вес (кг):*
+                        <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7" required>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">Возраст (лет):
+                        <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7">
+                      </label>
+                    </li>
+                  </ul>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__wrapper">
+                <fieldset class="form__fieldset fieldset form__fieldset-border">
+                  <legend class="fieldset__title"></legend>
+                  <ul class="fieldset__list">
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Похудение" checked>
+                        <span class="fieldset__mark"></span>
+                        <span class="fieldset__label">Похудение</span>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Набор массы">
+                        <span class="fieldset__mark"></span>
+                        <span class="fieldset__label">Набор массы</span>
+                      </label>
+                    </li>
+                      <li class="fieldset__item">
+                      <label class="fieldset__label">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
+                        <span class="fieldset__mark"></span>
+                        <span class="fieldset__label">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
             <div class="form__wrapper">
               <fieldset class="form__fieldset fieldset">
                 <legend class="fieldset__title fieldset__title-another fieldset__title--distance">Контактные данные (владельца кота)</legend>
-                <ul class="fieldset__list">
+                <ul class="fieldset__list fieldset__list--contact">
                   <li class="fieldset__item">
                     <label class="fieldset__label">E-mail:*
                       <input class="fieldset__control" type="email" name="new-email" placeholder="kuklachev@gmail.com" required>
@@ -124,7 +128,7 @@
                 <textarea class="fieldset__control" name="comment" cols="35" rows="7">Расскажите обо всех повадках кота</textarea>
               </fieldset>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--additionally">
               <fieldset class="form__fieldset form__fieldset--distance fieldset">
                 <legend class="fieldset__title fieldset__title--distance">Дополнительно</legend>
                 <ul class="fieldset__list">

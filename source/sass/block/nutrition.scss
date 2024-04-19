@@ -1,10 +1,31 @@
 .nutrition__item-wrapper {
   background-color: $a-bg-color;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    margin-right: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .nutrition__decoration-slim {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    top: 61px;
+    left: 447px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -40px;
+    left: 0;
+  }
 }
 
 .nutrition__decoration-slim::after {
@@ -33,6 +54,16 @@
 
 .nutrition__decoration-pro {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    top: 61px;
+    left: 447px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -40px;
+    left: 0;
+  }
 }
 
 .nutrition__decoration-pro::after {
@@ -72,11 +103,23 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding-top: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
 .nutrition__title--pro {
   margin-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .nutrition__text {
@@ -88,6 +131,18 @@
   line-height: 18px;
   margin-bottom: 38px;
   position: relative;
+  width: 227px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .nutrition__text::after {
@@ -97,6 +152,10 @@
   border: solid 1px $n-bg-color;
   bottom: -20px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nutrition__link {
@@ -111,6 +170,17 @@
   padding-bottom: 22px;
   margin-right: 15px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    padding-bottom: 0;
+  }
 }
 
 .nutrition__link::after {
@@ -122,4 +192,9 @@
   height: 10px;
   top: 4px;
   left: 95px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: 137px;
+  }
 }

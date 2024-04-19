@@ -6,6 +6,16 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .program-selection__text {
@@ -16,4 +26,13 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
+  text-transform: uppercase;
+  width: 226px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    width: 323px;
+  }
 }

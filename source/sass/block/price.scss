@@ -1,9 +1,23 @@
 .price {
   background-color: $price-bg-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 740px;
+  }
 }
 
 .price-wrapper {
   padding: 25px 20px 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 110px 75px 110px;
+  }
 }
 
 .price__item {
@@ -12,6 +26,10 @@
   align-items: center;
   width: 280px;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .price__item-wrapper {
@@ -61,6 +79,19 @@
   margin-bottom: 40px;
   font-family: $font;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -182px;
+    left: -108px;
+    margin-bottom: 0;
+  }
 }
 
 .price__text {
@@ -68,6 +99,17 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 432px;
+    margin-bottom: 69px;
+  }
 }
 
 .price__title-nutrition {
@@ -78,6 +120,25 @@
   font-family: $font;
   text-align: center;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 20px;
+    top: -70px;
+    right: -550px;
+    width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 278px;
+    gap: 22px;
+  }
 }
 
 .price__desckription {
@@ -85,4 +146,10 @@
   line-height: 20px;
   font-family: $font;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 20px;
+    margin-top: 9px;
+  }
 }
