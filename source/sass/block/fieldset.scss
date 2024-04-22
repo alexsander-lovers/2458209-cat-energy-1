@@ -9,7 +9,7 @@
   }
 }
 
-.fieldset__item {
+.fieldset__item:not(:last-child) {
   margin-bottom: 14px;
 }
 
@@ -19,7 +19,6 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
-  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -28,12 +27,28 @@
   }
 }
 
-.fieldset__title-another {
-  padding-top: 45px;
+.fieldset__title--distance {
+  margin-bottom: 35px;
+  position: relative;
+  width: 300px;
 }
 
-.fieldset__title--distance {
-  padding-bottom: 35px;
+.fieldset__title--distance::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: calc(100% - 200px);
+  top: 17px;
+  right: 0;
+  background-color: $btn-bg-color;
+}
+
+.form__fieldset--another {
+  margin-bottom: 24px;
+}
+
+.fieldset__title-another {
+  margin-bottom: 38px;
 }
 
 .fieldset__label {
@@ -42,6 +57,11 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color_4;
+  text-transform: uppercase;
+}
+
+.fieldset__label--text {
+  margin-left: 15px;
 }
 
 .fieldset__control {
@@ -52,8 +72,87 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color_4;
+  text-transform: uppercase;
+}
+
+.fieldset__label--radio {
+  position: relative;
+}
+
+.fieldset__label--checkbox {
+  position: relative;
+}
+
+.fieldset__mark--radio {
+  position: absolute;
+  background-color: $bg-color;
+  border-radius: 50%;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 1px solid $line-color;
+}
+
+.fieldset__control:checked + .fieldset__mark--radio::before {
+  content: "";
+  position: absolute;
+  background-color: $btn-bg-color;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  top: 8.5px;
+  left: 8.5px;
+}
+
+.fieldset__mark--checkbox {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  border: 1px solid $line-color;
+  cursor: pointer;
+}
+
+.fieldset__control[type="checkbox"]:checked + .fieldset__mark--checkbox::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/check-form.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  top: 4px;
+  left: 4px;
 }
 
 .fieldset__control--input-border {
   border: 1px solid $input-br-color;
+  margin-left: 13px;
+}
+
+.fieldset__control--width-1 {
+  width: 228px;
+}
+
+.fieldset__control--width-2 {
+  width: 207px;
+}
+
+.fieldset__control--width-3 {
+  width: 179px;
+}
+
+.fieldset__control--width-one {
+  position: relative;
+  width: 215px;
+  margin-left: 13px;
+}
+
+.fieldset__control--width-two {
+  width: 200px;
+  margin-left: 13px;
 }

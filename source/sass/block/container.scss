@@ -27,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 34px 0 30px;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +72,9 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 0 80px;
   }
 }
 

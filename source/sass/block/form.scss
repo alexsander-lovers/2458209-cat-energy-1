@@ -21,7 +21,11 @@
 }
 
 .form__fieldset--distance {
-  padding-bottom: 25px;
+  margin-bottom: 46px;
+}
+
+.form__fieldset--distance-width {
+  margin-bottom: 35px;
 }
 
 .form__wrapper {
@@ -35,7 +39,8 @@
 
 .form__text {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 21px;
+  margin-bottom: 32px;
   font-weight: 400;
 }
 
@@ -46,7 +51,7 @@
 .form__fieldset-border::after {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 100%;
   border: 1px solid $n-bg-color;
   top: -20px;
   left: -20px;
@@ -59,7 +64,7 @@
 .form__fieldset-border::before {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 100%;
   border: 1px solid $n-bg-color;
   bottom: -20px;
   left: -20px;
