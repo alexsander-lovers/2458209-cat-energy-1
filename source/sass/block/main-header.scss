@@ -3,12 +3,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
-    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 59px;
-    margin-bottom: 110px;
   }
 }
 
@@ -31,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 643px;
+    margin-right: 580px;
   }
 }
 
@@ -41,8 +39,38 @@
   align-items: center;
 }
 
+
 @media (min-width: $tablet-width) {
-  .main-header__logo {
-    margin-right: 13px;
+  .main-header__logo-images {
+    display: none;
+  }
+}
+
+.main-header__logo {
+  margin-right: 0;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/logo-tablet.svg");
+    width: 60px;
+    height: 50px;
+    top: -26px;
+    left: -74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/logo-desktop.svg");
+    width: 70px;
+    height: 59px;
+    top: -35px;
+    left: -74px;
   }
 }

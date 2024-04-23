@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     transform: translateX(0%);
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +37,16 @@
     margin-top: 0;
     padding: 0;
     background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list--main {
+    margin-left: 125px;
   }
 }
 

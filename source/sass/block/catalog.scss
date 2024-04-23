@@ -1,6 +1,6 @@
 .catalog__title {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 27px;
   margin-bottom: 41px;
   font-size: 36px;
   line-height: 36px;
@@ -12,6 +12,11 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 84px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
   }
 }
 

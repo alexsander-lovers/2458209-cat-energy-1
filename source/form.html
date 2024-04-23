@@ -105,17 +105,21 @@
             </div>
             <div class="form__wrapper">
               <fieldset class="form__fieldset form__fieldset--another fieldset">
-                <legend class="fieldset__title fieldset__title--distance">Контактные данные<br> (владельца кота)</legend>
+                <legend class="fieldset__title fieldset__title--distance">Контактные данные (владельца кота)</legend>
                 <ul class="fieldset__list fieldset__list--contact">
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__label--email">
                     <label class="fieldset__label">E-mail:*
                       <input class="fieldset__control fieldset__control--width-one" type="email" name="new-email" placeholder="kuklachev@gmail.com" required>
                     </label>
+                    <button class="fieldset__button-email"></button>
+                    <span class="visually-hidden">E-mail</span>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__label--phone">
                     <label class="fieldset__label">Телефон:*
                       <input class="fieldset__control fieldset__control--width-two" type="tel" name="new-tel" placeholder="8 (960) 900-60-90" required>
                     </label>
+                    <button class="fieldset__button-phone"></button>
+                    <span class="visually-hidden">Телефон</span>
                   </li>
                 </ul>
               </fieldset>
@@ -129,7 +133,7 @@
             <div class="form__wrapper form__wrapper--additionally">
               <fieldset class="form__fieldset form__fieldset--distance form__fieldset--distance-width fieldset">
                 <legend class="fieldset__title fieldset__title--distance">Дополнительно</legend>
-                <ul class="fieldset__list">
+                <ul class="fieldset__list fieldset__list--checkbox">
                   <li class="fieldset__item">
                     <label class="fieldset__label fieldset__label--checkbox">
                       <input class="fieldset__control" type="checkbox" name="Cахарозаменитель" checked>
@@ -161,7 +165,7 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--tablet">
               <button class="button form__button" type="submit">Отправить заявку</button>
               <b class="form__text">* — Обязательные поля</b>
             </div>

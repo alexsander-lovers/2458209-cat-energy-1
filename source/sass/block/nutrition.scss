@@ -38,6 +38,20 @@
   background-color: $btn-bg-color;
   z-index: 0;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .nutrition__decoration-slim::before {
@@ -50,6 +64,22 @@
   width: 36px;
   height: 50px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/photo-slim-tablet.svg");
+    width: 140px;
+    height: 197px;
+    top: -59px;
+    left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/photo-slim-desktop.svg");
+    width: 70px;
+    height: 97px;
+    top: -5px;
+    left: 15px;
+  }
 }
 
 .nutrition__decoration-pro {
@@ -76,6 +106,20 @@
   background-color: $btn-bg-color;
   z-index: 0;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .nutrition__decoration-pro::before {
@@ -88,6 +132,22 @@
   width: 67px;
   height: 28px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/photo-pro-tablet.svg");
+    width: 268px;
+    height: 112px;
+    top: -16px;
+    left: -72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/photo-pro-desktop.svg");
+    width: 134px;
+    height: 56px;
+    top: 18px;
+    left: -25px;
+  }
 }
 
 .nutrition__title {
