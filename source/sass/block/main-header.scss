@@ -39,7 +39,6 @@
   align-items: center;
 }
 
-
 @media (min-width: $tablet-width) {
   .main-header__logo-images {
     display: none;
@@ -49,6 +48,30 @@
 .main-header__logo {
   margin-right: 0;
   position: relative;
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:focus {
+  opacity: 0.6;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:focus {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {

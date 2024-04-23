@@ -10,6 +10,18 @@
   }
 }
 
+.burger-menu:hover {
+  opacity: 0.6;
+}
+
+.burger-menu:focus {
+  opacity: 0.3;
+}
+
+.burger-menu:active {
+  opacity: 0.3;
+}
+
 .burger-menu .burger-menu__line {
   content: "";
   width: 24px;
