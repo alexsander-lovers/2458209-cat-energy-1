@@ -1,11 +1,45 @@
+@media (min-width: $tablet-width) {
+  .form__wrapper-all {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-all {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
 
+.form__fieldset--another {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .form__fieldset--distance {
-  padding-bottom: 25px;
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.form__fieldset--distance-width {
+  margin-bottom: 35px;
 }
 
 .form__wrapper {
@@ -13,34 +47,85 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+  .form__wrapper--tablet {
+    display: grid;
+    grid-template-columns: 225px 195px;
+    align-items: center;
+    gap: 0 125px;
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper--tablet {
+    gap: 0 540px;
+    margin-bottom: 79px;
+  }
+}
+
 .form__button {
   padding: 10px 44px 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 284px;
+    padding: 14px 44px 14px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__text {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 21px;
+  margin-bottom: 32px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .form__fieldset-border {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $input-br-color;
+    width: 614px;
+    padding: 23px 12px 27px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-bottom: 0;
+  }
 }
 
 .form__fieldset-border::after {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 100%;
   border: 1px solid $n-bg-color;
   top: -20px;
   left: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .form__fieldset-border::before {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 100%;
   border: 1px solid $n-bg-color;
   bottom: -20px;
   left: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -4,6 +4,22 @@
   position: relative;
   overflow: hidden;
   z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.burger-menu:hover {
+  opacity: 0.6;
+}
+
+.burger-menu:focus {
+  opacity: 0.3;
+}
+
+.burger-menu:active {
+  opacity: 0.3;
 }
 
 .burger-menu .burger-menu__line {

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -27,8 +28,6 @@
             </div>
           </li>
         </ul>
-      </div>
-      <div class="main-header__navigation-wrapper">
         <nav class="main-navigation">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
@@ -37,8 +36,8 @@
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-navigation__item main-navigation__item--current">
-              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current main-navigation__link--current-border" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -46,119 +45,127 @@
     </header>
     <main class="main-container">
       <section class="program-selection">
-        <div class="container container--anoter">
+        <div class="container container--form">
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__wrapper">
-              <fieldset class="form__fieldset fieldset">
-                <legend class="fieldset__title"></legend>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Имя:*
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="Барсик" required>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Вес (кг):*
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7" required>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">Возраст (лет):
-                      <input class="fieldset__control fieldset__control--input-border" type="text" name="Name" placeholder="7">
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper">
-              <fieldset class="form__fieldset fieldset form__fieldset-border">
-                <legend class="fieldset__title"></legend>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Похудение" checked>
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Похудение</span>
-                    </label>
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Набор массы">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Набор массы</span>
-                    </label>
-                  </li>
+            <div class="form__wrapper-all">
+              <div class="form__wrapper">
+                <fieldset class="form__fieldset form__fieldset--distance fieldset">
+                  <legend class="fieldset__title"></legend>
+                  <div class="fieldset__wrapper">
+                  <ul class="fieldset__list">
                     <li class="fieldset__item">
-                    <label class="fieldset__label">
-                      <input class="fieldset__control" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Не знаю (Нужен ваш совет)</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                      <label class="fieldset__label">Имя:*
+                        <input class="fieldset__control fieldset__control--input-border fieldset__control--width-1" type="text" name="Name" placeholder="Барсик" required>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">Вес (кг):*
+                        <input class="fieldset__control fieldset__control--input-border fieldset__control--width-2" type="text" name="Name" placeholder="7" required>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label">Возраст (лет):
+                        <input class="fieldset__control fieldset__control--input-border fieldset__control--width-3" type="text" name="Name" placeholder="7">
+                      </label>
+                    </li>
+                  </ul>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__wrapper">
+                <fieldset class="form__fieldset form__fieldset--distance fieldset form__fieldset-border">
+                  <legend class="fieldset__title"></legend>
+                  <ul class="fieldset__list">
+                    <li class="fieldset__item">
+                      <label class="fieldset__label fieldset__label--radio">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Похудение" checked>
+                        <span class="fieldset__mark fieldset__mark--radio"></span>
+                        <span class="fieldset__label fieldset__label--text">Похудение</span>
+                      </label>
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label fieldset__label--radio">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Набор массы">
+                        <span class="fieldset__mark fieldset__mark--radio"></span>
+                        <span class="fieldset__label fieldset__label--text">Набор массы</span>
+                      </label>
+                    </li>
+                      <li class="fieldset__item">
+                      <label class="fieldset__label fieldset__label--radio">
+                        <input class="fieldset__control" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
+                        <span class="fieldset__mark fieldset__mark--radio"></span>
+                        <span class="fieldset__label fieldset__label--text">Не знаю (Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
             <div class="form__wrapper">
-              <fieldset class="form__fieldset fieldset">
-                <legend class="fieldset__title fieldset__title-another fieldset__title--distance">Контактные данные (владельца кота)</legend>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
+              <fieldset class="form__fieldset form__fieldset--another fieldset">
+                <legend class="fieldset__title fieldset__title--distance">Контактные данные (владельца кота)</legend>
+                <ul class="fieldset__list fieldset__list--contact">
+                  <li class="fieldset__item fieldset__label--email">
                     <label class="fieldset__label">E-mail:*
-                      <input class="fieldset__control" type="email" name="new-email" placeholder="kuklachev@gmail.com" required>
+                      <input class="fieldset__control fieldset__control--width-one" type="email" name="new-email" placeholder="kuklachev@gmail.com" required>
                     </label>
+                    <button class="fieldset__button-email"></button>
+                    <span class="visually-hidden">E-mail</span>
                   </li>
-                  <li class="fieldset__item">
+                  <li class="fieldset__item fieldset__label--phone">
                     <label class="fieldset__label">Телефон:*
-                      <input class="fieldset__control" type="tel" name="new-tel" placeholder="8 (960) 900-60-90" required>
+                      <input class="fieldset__control fieldset__control--width-two" type="tel" name="new-tel" placeholder="8 (960) 900-60-90" required>
                     </label>
+                    <button class="fieldset__button-phone"></button>
+                    <span class="visually-hidden">Телефон</span>
                   </li>
                 </ul>
               </fieldset>
             </div>
             <div class="form__wrapper">
-              <fieldset class="form__fieldset form__fieldset--distance fieldset">
-                <legend class="fieldset__title fieldset__title--distance">Комментарий</legend>
-                <textarea class="fieldset__control" name="comment" cols="35" rows="7">Расскажите обо всех повадках кота</textarea>
+              <fieldset class="form__fieldset form__fieldset--another fieldset">
+                <legend class="fieldset__title fieldset__title-another fieldset__title--distance">Комментарий</legend>
+                <textarea class="fieldset__control" name="comment" cols="43" rows="7">Расскажите обо всех повадках кота</textarea>
               </fieldset>
             </div>
-            <div class="form__wrapper">
-              <fieldset class="form__fieldset form__fieldset--distance fieldset">
+            <div class="form__wrapper form__wrapper--additionally">
+              <fieldset class="form__fieldset form__fieldset--distance form__fieldset--distance-width fieldset">
                 <legend class="fieldset__title fieldset__title--distance">Дополнительно</legend>
-                <ul class="fieldset__list">
+                <ul class="fieldset__list fieldset__list--checkbox">
                   <li class="fieldset__item">
-                    <label class="fieldset__label">
+                    <label class="fieldset__label fieldset__label--checkbox">
                       <input class="fieldset__control" type="checkbox" name="Cахарозаменитель" checked>
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Cахарозаменитель</span>
+                      <span class="fieldset__mark fieldset__mark--checkbox"></span>
+                      <span class="fieldset__label fieldset__label--text">Cахарозаменитель</span>
                     </label>
                   </li>
                   <li class="fieldset__item">
-                    <label class="fieldset__label">
+                    <label class="fieldset__label fieldset__label--checkbox">
                       <input class="fieldset__control" type="checkbox" name="Питьевая вода">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Питьевая вода</span>
+                      <span class="fieldset__mark fieldset__mark--checkbox"></span>
+                      <span class="fieldset__label fieldset__label--text">Питьевая вода</span>
                     </label>
                   </li>
                   <li class="fieldset__item">
-                    <label class="fieldset__label">
+                    <label class="fieldset__label fieldset__label--checkbox">
                       <input class="fieldset__control" type="checkbox" name="Молоко">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Молоко</span>
+                      <span class="fieldset__mark fieldset__mark--checkbox"></span>
+                      <span class="fieldset__label fieldset__label--text">Молоко</span>
                     </label>
                   </li>
                   <li class="fieldset__item">
-                    <label class="fieldset__label">
+                    <label class="fieldset__label fieldset__label--checkbox">
                       <input class="fieldset__control" type="checkbox" name="Витамины">
-                      <span class="fieldset__mark"></span>
-                      <span class="fieldset__label">Витамины</span>
+                      <span class="fieldset__mark fieldset__mark--checkbox"></span>
+                      <span class="fieldset__label fieldset__label--text">Витамины</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--tablet">
               <button class="button form__button" type="submit">Отправить заявку</button>
               <b class="form__text">* — Обязательные поля</b>
             </div>
@@ -170,7 +177,7 @@
           <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
           <a class="location__link" href="#">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
         </div>
-        <img class="location__image" src="img/location-1.jpg" height="362" width="320" alt="Расположение на карте.">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037875607926!2d30.320569747886807!3d59.93871647677459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713880857290!5m2!1sru!2sru" width=320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -221,7 +228,7 @@
     <script>
       document.querySelector('.burger-menu').addEventListener('click', function() {
           this.classList.toggle('active');
-          document.querySelector('.main-header__navigation-wrapper').classList.toggle('active');
+          document.querySelector('.main-navigation').classList.toggle('active');
       })
   </script>
   </body>

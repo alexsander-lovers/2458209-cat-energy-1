@@ -10,6 +10,12 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color_1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 175px;
+  }
 }
 
 .location__link {
@@ -19,9 +25,20 @@
   text-decoration: none;
   color: $text-color_4;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 188px;
+    text-align: right;
+    font-size: 16px;
+  }
 }
 
 .location__image {
   width: 100%;
   object-fit: inherit;
+}
+
+.location iframe {
+  display: block;
+  width: 100%;
 }

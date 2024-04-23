@@ -13,3 +13,17 @@
   font-family: $font;
   cursor: pointer;
 }
+
+.button:hover {
+  background-color: $btn-hover-bg-color;
+}
+
+.button:focus {
+  opacity: 0.7;
+  background-color: $btn-hover-bg-color;
+}
+
+.button:active {
+  opacity: 0.7;
+  background-color: $btn-hover-bg-color;
+}

@@ -1,11 +1,36 @@
 .main-header {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 59px;
+  }
+}
+
+.main-header--border {
+  border-bottom: 1px solid $n-bg-color;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .main-header-list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 580px;
+  }
 }
 
 .main-header-item {
@@ -14,17 +39,61 @@
   align-items: center;
 }
 
-.main-header__navigation-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-100%);
+@media (min-width: $tablet-width) {
+  .main-header__logo-images {
+    display: none;
+  }
 }
 
-.main-header__navigation-wrapper.active {
-  transform: translateX(0);
-  z-index: 4;
-  transition: transform 0.5s;
+.main-header__logo {
+  margin-right: 0;
+  position: relative;
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:focus {
+  opacity: 0.6;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:focus {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/logo-tablet.svg");
+    width: 60px;
+    height: 50px;
+    top: -26px;
+    left: -74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/logo-desktop.svg");
+    width: 70px;
+    height: 59px;
+    top: -35px;
+    left: -74px;
+  }
 }

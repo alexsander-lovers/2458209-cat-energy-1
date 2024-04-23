@@ -2,7 +2,29 @@
   @include list-reset;
 }
 
-.fieldset__item {
+@media (min-width: $desktop-width) {
+  .fieldset__list--contact {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset__list--checkbox {
+    display: grid;
+    grid-template-columns: 225px 195px;
+    gap: 32px 123px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset__list--checkbox {
+    display: flex;
+    gap: 0 225px;
+  }
+}
+
+.fieldset__item:not(:last-child) {
   margin-bottom: 14px;
 }
 
@@ -12,15 +34,44 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
-  margin-bottom: 45px;
-}
 
-.fieldset__title-another {
-  padding-top: 45px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .fieldset__title--distance {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+  position: relative;
+  width: 292px;
+
+  @media (min-width: $tablet-width) {
+    width: 530px;
+    margin-bottom: 76px;
+  }
+}
+
+.fieldset__title--distance::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: calc(100% - 200px);
+  top: 17px;
+  right: 0;
+  background-color: $btn-bg-color;
+
+  @media (min-width: $tablet-width) {
+    right: -340px;
+  }
+}
+
+.fieldset__title-another {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .fieldset__label {
@@ -29,6 +80,19 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color_4;
+  text-transform: uppercase;
+}
+
+.fieldset__label--email {
+  position: relative;
+}
+
+.fieldset__label--phone {
+  position: relative;
+}
+
+.fieldset__label--text {
+  margin-left: 15px;
 }
 
 .fieldset__control {
@@ -39,8 +103,170 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color_4;
+  text-transform: uppercase;
+}
+
+.fieldset__label--radio {
+  position: relative;
+}
+
+.fieldset__label--checkbox {
+  position: relative;
+}
+
+.fieldset__mark--radio {
+  position: absolute;
+  background-color: $bg-color;
+  border-radius: 50%;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 1px solid $line-color;
+}
+
+.fieldset__control:checked + .fieldset__mark--radio::before {
+  content: "";
+  position: absolute;
+  background-color: $btn-bg-color;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  top: 8.5px;
+  left: 8.5px;
+}
+
+.fieldset__mark--checkbox {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  border: 1px solid $line-color;
+  cursor: pointer;
+}
+
+.fieldset__control[type="checkbox"]:checked + .fieldset__mark--checkbox::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/check-form.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  top: 4px;
+  left: 4px;
 }
 
 .fieldset__control--input-border {
   border: 1px solid $input-br-color;
+  margin-left: 13px;
+}
+
+.fieldset__control--width-1 {
+  width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 568px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 510px;
+  }
+}
+
+.fieldset__control--width-2 {
+  width: 207px;
+
+  @media (min-width: $tablet-width) {
+    width: 546px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 488px;
+  }
+}
+
+.fieldset__control--width-3 {
+  width: 179px;
+
+  @media (min-width: $tablet-width) {
+    width: 513px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 455px;
+  }
+}
+
+.fieldset__control--width-one {
+  position: relative;
+  width: 215px;
+  margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 552px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 492px;
+  }
+}
+
+.fieldset__button-email {
+  background-image: url("/img/envelope-form.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: 15px;
+  border: none;
+  background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 15px;
+  }
+}
+
+.fieldset__control--width-two {
+  position: relative;
+  width: 200px;
+  margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 472px;
+  }
+}
+
+.fieldset__button-phone {
+  background-image: url("/img/phone-form.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: 15px;
+  border: none;
+  background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 15px;
+  }
 }
