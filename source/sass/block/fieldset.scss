@@ -5,7 +5,7 @@
 @media (min-width: $desktop-width) {
   .fieldset__list--contact {
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
   }
 }
 
@@ -20,12 +20,17 @@
 @media (min-width: $desktop-width) {
   .fieldset__list--checkbox {
     display: flex;
-    gap: 0 225px;
   }
 }
 
 .fieldset__item:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.fieldset__item--checkbox {
+  @media (min-width: $desktop-width) {
+    width: 221px;
+  }
 }
 
 .fieldset__title {
@@ -49,20 +54,6 @@
   @media (min-width: $tablet-width) {
     width: 530px;
     margin-bottom: 76px;
-  }
-}
-
-.fieldset__title--distance::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: calc(100% - 200px);
-  top: 17px;
-  right: 0;
-  background-color: $btn-bg-color;
-
-  @media (min-width: $tablet-width) {
-    right: -340px;
   }
 }
 
@@ -104,6 +95,13 @@
   font-family: $font;
   color: $text-color_4;
   text-transform: uppercase;
+}
+
+.fieldset__control--textarea {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .fieldset__label--radio {
@@ -174,6 +172,7 @@
 
   @media (min-width: $desktop-width) {
     width: 510px;
+    box-sizing: border-box;
   }
 }
 
@@ -186,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     width: 488px;
+    box-sizing: border-box;
   }
 }
 
@@ -198,6 +198,7 @@
 
   @media (min-width: $desktop-width) {
     width: 455px;
+    box-sizing: border-box;
   }
 }
 

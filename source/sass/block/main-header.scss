@@ -25,11 +25,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    margin-right: 94px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 580px;
+    margin-right: auto;
   }
 }
 
@@ -37,12 +37,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: $tablet-width) {
-  .main-header__logo-images {
-    display: none;
-  }
 }
 
 .main-header__logo {
@@ -72,28 +66,4 @@
 
 .logo:active {
   opacity: 0.6;
-}
-
-@media (min-width: $tablet-width) {
-  .main-header__logo::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/logo-tablet.svg");
-    width: 60px;
-    height: 50px;
-    top: -26px;
-    left: -74px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__logo::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/logo-desktop.svg");
-    width: 70px;
-    height: 59px;
-    top: -35px;
-    left: -74px;
-  }
 }

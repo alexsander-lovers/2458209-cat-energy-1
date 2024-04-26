@@ -25,7 +25,7 @@
 
 .main-navigation__list {
   @include list-reset;
-  margin-top: 65px;
+  margin-top: 40px;
   padding: 22px 75px 1px 76px;
   background-color: $bg-color;
 
@@ -116,6 +116,11 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 12px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__item:not(:last-child) {
     margin-right: 33px;
   }
 }

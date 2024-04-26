@@ -1,6 +1,6 @@
 .advantages {
   @media (min-width: $tablet-width) {
-    min-height: 740px;
+    min-height: 665px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,8 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 23px;
     margin-bottom: 50px;
   }
 }
@@ -33,18 +31,71 @@
 .advantages__text {
   margin: 0;
   margin-bottom: 20px;
+  margin-left: 75px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 250px;
-    position: relative;
-    top: 63px;
-    left: -78px;
-    z-index: 1;
-    margin-top: 31px;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item:nth-child(1) .advantages__text::before {
+    content: "1";
+    position: absolute;
+    font-family: $font;
+      font-weight: 400;
+      color: $a-bg-color;
+      font-size: 280px;
+      line-height: 280px;
+      top: -40px;
+      right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item:nth-child(2) .advantages__text::before {
+    content: "2";
+    position: absolute;
+    font-family: $font;
+      font-weight: 400;
+      color: $a-bg-color;
+      font-size: 280px;
+      line-height: 280px;
+      top: -40px;
+      right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item:nth-child(3) .advantages__text::before {
+    content: "3";
+    position: absolute;
+    font-family: $font;
+      font-weight: 400;
+      color: $a-bg-color;
+      font-size: 280px;
+      line-height: 280px;
+      top: -40px;
+      right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item:nth-child(4) .advantages__text::before {
+    content: "4";
+    position: absolute;
+    font-family: $font;
+      font-weight: 400;
+      color: $a-bg-color;
+      font-size: 280px;
+      line-height: 280px;
+      top: -40px;
+      right: 0;
   }
 }
 
@@ -54,36 +105,37 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
-    gap: 37px 153px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 23px;
   }
 }
 
 .advantages__item {
-  margin-left: 80px;
+  position: relative;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     height: 280px;
+    margin-left: 0;
+    width: 229px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
-.advantages__item-decoration {
-  position: relative;
-}
-
-.advantages__item-decoration::after {
+.advantages__item::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -80px;
+  left: 0;
   width: 60px;
   height: 60px;
   background-color: $btn-bg-color;
-  z-index: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -91,14 +143,14 @@
   }
 }
 
-.advantages__item:nth-child(1) .advantages__item-decoration::before {
+.advantages__item:nth-child(1)::before {
   content: "";
   position: absolute;
   background-image: url("/img/functional-food-photo-1.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left: -80px;
+  left: 0;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -110,14 +162,14 @@
   }
 }
 
-.advantages__item:nth-child(2) .advantages__item-decoration::before {
+.advantages__item:nth-child(2)::before {
   content: "";
   position: absolute;
   background-image: url("/img/functional-food-photo-2.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left: -80px;
+  left: 0;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -129,14 +181,14 @@
   }
 }
 
-.advantages__item:nth-child(3) .advantages__item-decoration::before {
+.advantages__item:nth-child(3)::before {
   content: "";
   position: absolute;
   background-image: url("/img/functional-food-photo-3.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left: -80px;
+  left: 0;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -148,14 +200,14 @@
   }
 }
 
-.advantages__item:nth-child(4) .advantages__item-decoration::before {
+.advantages__item:nth-child(4)::before {
   content: "";
   position: absolute;
   background-image: url("/img/functional-food-photo-4.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
-  left: -80px;
+  left: 0;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -164,21 +216,5 @@
     width: 80px;
     height: 80px;
     top: -2px;
-  }
-}
-
-.advantages__item-number {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    font-family: $font;
-    font-weight: 400;
-    color: $a-bg-color;
-    font-size: 280px;
-    line-height: 280px;
-    position: relative;
-    top: -162px;
-    right: -42px;
   }
 }

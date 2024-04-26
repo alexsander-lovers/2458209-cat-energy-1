@@ -8,7 +8,8 @@
 @media (min-width: $desktop-width) {
   .form__wrapper-all {
     flex-direction: row;
-    gap: 80px;
+    margin-bottom: 70px;
+    justify-content: space-between;
   }
 }
 
@@ -34,7 +35,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 0;
+    width: 570px;
   }
 }
 
@@ -101,6 +103,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 0;
+    height: 100%;
   }
 }
 

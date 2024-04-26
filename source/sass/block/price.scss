@@ -7,16 +7,26 @@
 }
 
 .price-wrapper {
-  padding: 25px 20px 40px 20px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 560px;
+    justify-content: space-between;
+   }
+}
+
+.price-wrapper__another {
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 708px;
+    display: grid;
+    grid-template-columns: 375px 333px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px 75px 110px;
+   width: 433px;
+   display: flex;
+   flex-direction: column;
   }
 }
 
@@ -84,13 +94,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
+    grid-column: 1/3;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    top: -182px;
-    left: -108px;
-    margin-bottom: 0;
   }
 }
 
@@ -104,10 +111,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    grid-column: 1 / 3;
   }
 
   @media (min-width: $desktop-width) {
-    width: 432px;
     margin-bottom: 69px;
   }
 }
@@ -122,22 +129,15 @@
   color: $text-color;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     font-size: 20px;
-    top: -70px;
-    right: -550px;
-    width: 160px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    right: 10px;
+    text-align: left;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 278px;
-    gap: 22px;
+    gap: 63px;
   }
 }
 
@@ -151,5 +151,9 @@
     display: block;
     font-size: 20px;
     margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+   margin-top: 0;
   }
 }

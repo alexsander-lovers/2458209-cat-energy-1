@@ -1,9 +1,12 @@
 .promo {
   color: $bg-color;
   position: relative;
+  margin-bottom: 20px;
+  min-height: 492px;
 
   @media (min-width: $tablet-width) {
     min-height: 800px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +19,14 @@
   z-index: 1;
   top: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .promo__wrapper::before {
@@ -36,8 +47,8 @@
   @media (min-width: $desktop-width) {
     display: block;
     top: -206px;
-    left: 722px;
-    width: 720px;
+    left: 50%;
+    width: 50%;
     height: 694px;
   }
 }
@@ -60,9 +71,10 @@
   @media (min-width: $desktop-width) {
     display: block;
     top: -206px;
-    left: 722px;
-    width: 720px;
+    left: 50%;
+    width: 50%;
     height: 694px;
+    background-image: url("/img/photo-cat-1.jpg");
   }
 }
 
@@ -85,7 +97,6 @@
     line-height: 60px;
     width: 420px;
     margin-bottom: 40px;
-    margin-left: 100px;
     text-align: left;
     margin-top: 65px;
   }
@@ -110,14 +121,15 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    top: 230px;
+    top: 213px;
+    left: -37px;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
     top: -57px;
-    left: 591px;
+    left: 50%;
     z-index: 4;
   }
 }
@@ -139,23 +151,25 @@
     line-height: 20px;
     color: $text-color;
     margin-bottom: 50px;
-    margin-left: 100px;
   }
 }
 
 .promo__button {
+  position: absolute;
+  bottom: 0;
   margin-left: 20px;
-  margin-top: 446px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px 14px 26px;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    margin-top: 25px;
-    margin-left: 100px;
+    margin-right: 0;
+    width: 192px;
+    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    position: static;
   }
 }

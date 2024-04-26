@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: repeat(1, 280px);
   gap: 25px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
@@ -44,6 +45,14 @@
   align-items: center;
   gap: 20px 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 169px;
+  }
 }
 
 .catalog__item::after {
