@@ -5,36 +5,21 @@
   min-height: 492px;
 
   @media (min-width: $tablet-width) {
-    min-height: 800px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 530px;
-  }
-}
-
-.promo__wrapper {
-  position: relative;
-  z-index: 1;
-  top: 0;
-  right: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
+    margin-bottom: 175px;
     position: static;
   }
 }
 
-.promo__wrapper::before {
+.promo::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 100%;
   height: 302px;
   background-color: $btn-bg-color;
   z-index: 4;
@@ -46,14 +31,14 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    top: -206px;
+    top: 0;
     left: 50%;
     width: 50%;
     height: 694px;
   }
 }
 
-.promo__wrapper::after {
+.promo::after {
   content: "";
   background-image: url("/img/photo-cat-1.jpg");
   background-repeat: no-repeat;
@@ -61,7 +46,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 100%;
   height: 302px;
 
   @media (min-width: $tablet-width) {
@@ -70,11 +55,22 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    top: -206px;
+    top: 0;
     left: 50%;
     width: 50%;
     height: 694px;
     background-image: url("/img/photo-cat-1.jpg");
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 610px);
   }
 }
 
@@ -84,10 +80,11 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 25px;
+  padding-top: 27px;
+  box-sizing: border-box;
   font-family: $font;
-  position: absolute;
+  position: relative;
   z-index: 4;
 
   @media (min-width: $tablet-width) {
@@ -98,39 +95,15 @@
     width: 420px;
     margin-bottom: 40px;
     text-align: left;
+    padding-top: 0;
     margin-top: 65px;
+    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 110px;
-  }
-}
-
-.promo__title::before {
-  content: "";
-  background-image: url("/img/chicken-food-cats.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  top: 167px;
-  left: 20px;
-  width: 280px;
-  height: 270px;
-  z-index: 3;
-
-  @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
-    top: 213px;
-    left: -37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    top: -57px;
-    left: 50%;
-    z-index: 4;
+    margin-left: 80px;
+    grid-row: 1/1;
   }
 }
 
@@ -140,10 +113,10 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  position: absolute;
+  position: relative;
   z-index: 4;
-  top: 123px;
-  right: 60px;
+  text-align: center;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -151,15 +124,33 @@
     line-height: 20px;
     color: $text-color;
     margin-bottom: 50px;
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    grid-row: 2/3;
+  }
+}
+
+.promo__img {
+  position: relative;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-top: -75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: -170px;
   }
 }
 
 .promo__button {
-  position: absolute;
-  bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-
   @media (min-width: $tablet-width) {
     padding: 14px 26px 14px 26px;
     position: relative;
@@ -167,9 +158,11 @@
     margin-right: 0;
     width: 192px;
     margin-left: 90px;
+    grid-row: 3/4;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
+    margin-left: 80px;
   }
 }

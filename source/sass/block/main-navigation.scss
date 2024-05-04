@@ -19,19 +19,19 @@
 
 .main-navigation.active {
   transform: translateX(0);
-  z-index: 4;
+  z-index: 16;
   transition: transform 0.5s;
 }
 
 .main-navigation__list {
   @include list-reset;
   margin-top: 40px;
-  padding: 22px 75px 1px 76px;
+  padding: 22px 0;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 0;
@@ -110,7 +110,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 46px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -119,10 +118,17 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-navigation__item:not(:last-child) {
+.main-navigation__item:not(:last-child) {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
     margin-right: 33px;
+    margin-bottom: 0;
   }
+}
+
+.main-navigation__item:last-child {
+  margin-bottom: 24px;
 }
 
 .main-navigation__item::after {
