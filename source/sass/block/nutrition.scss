@@ -9,7 +9,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 77px 61px 55px 52px;
-    margin-right: 80px;
     margin-bottom: 71px;
   }
 }
@@ -160,6 +159,7 @@
   font-weight: 400;
   font-family: $font;
   color: $text-color;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -191,7 +191,6 @@
   line-height: 18px;
   margin-bottom: 38px;
   position: relative;
-  width: 227px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -210,7 +209,7 @@
   position: absolute;
   width: 240px;
   border: solid 1px $n-bg-color;
-  bottom: -20px;
+  bottom: -23px;
   left: 0;
 
   @media (min-width: $tablet-width) {

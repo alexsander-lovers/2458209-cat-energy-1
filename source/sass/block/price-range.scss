@@ -1,8 +1,15 @@
 .price-range {
-  display: block;
   position: relative;
-  width: 280px;
-  min-height: 256px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .price-range::before {

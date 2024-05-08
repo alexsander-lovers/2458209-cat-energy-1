@@ -1,3 +1,7 @@
+.catalog {
+  overflow: hidden;
+}
+
 .catalog__title {
   margin: 0;
   margin-top: 27px;
@@ -25,6 +29,7 @@
   display: grid;
   grid-template-columns: repeat(1, 280px);
   gap: 25px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
@@ -32,7 +37,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;
   }
@@ -42,17 +46,32 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   align-items: center;
-  gap: 20px 0;
+  gap: 17px 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    grid-template-columns: repeat(2, 125px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 169px;
+  }
+}
+
+.catalog__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(0deg, rgba(242, 242, 242, 1) 90%, rgba(255, 255, 255, 1) 53%);
+  }
 }
 
 .catalog__item::after {
   content: "";
   position: absolute;
-  width: 320px;
-  border: solid 1px $p-bg-color;
+  width: 1000vw;
+  border: solid 1px $hover-bg-color;
   top: -12px;
-  left: -20px;
+  left: -300px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -81,18 +100,37 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    top: 40px;
+    left: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
   }
 }
 
 .catalog__item--all-product::before {
   content: "";
   position: absolute;
-  width: 320px;
-  border: solid 1px $p-bg-color;
+  width: 1000vw;
+  border: solid 1px $hover-bg-color;
   top: -5px;
-  left: -20px;
+  left: -300px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.catalog__item-wrapper {
+  display: grid;
+  grid-template-columns: 76px 64px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 125px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 85px);
   }
 }
