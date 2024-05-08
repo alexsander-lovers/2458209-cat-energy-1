@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     transform: translateX(0%);
-    width: auto;
+    width: 478px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,68 +44,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-navigation__list--main {
-    margin-left: 125px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-navigation__link--current::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $btn-bg-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-navigation__link--current::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $bg-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-navigation__link--current-border::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $btn-bg-color;
-  }
-}
-
-.main-navigation__link {
-  display: block;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: $font;
-  text-decoration: none;
-  color: $text-color;
-  text-transform: uppercase;
-}
-
-@media (min-width: $desktop-width) {
-  .main-navigation__link-color {
-    color: $bg-color;
-  }
-}
-
 .main-navigation__item {
   display: flex;
   justify-content: center;
@@ -113,7 +51,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 12px;
     margin-bottom: 0;
   }
 }
@@ -147,5 +84,66 @@
 .main-navigation__list:last-of-type .main-navigation__item:last-child {
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.main-navigation__link {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $font;
+  text-decoration: none;
+  color: $text-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link-color {
+    color: $bg-color;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-navigation__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $btn-bg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $bg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link--current-border::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $btn-bg-color;
   }
 }

@@ -1,19 +1,14 @@
 .price-range {
-  display: block;
   position: relative;
-  width: 280px;
-  min-height: 256px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-left: 74px;
-    margin-right: 74px;
-    width: 512px;
+    padding-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-right: 0;
+    padding-bottom: 0;
   }
 }
 
