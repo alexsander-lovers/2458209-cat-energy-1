@@ -64,6 +64,7 @@
     height: 280px;
     margin-left: 0;
     width: 229px;
+    counter-increment: number 1;
   }
 }
 
@@ -174,53 +175,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item:nth-child(1) .advantages__text::before {
-    content: "1";
-    position: absolute;
-    font-family: $font;
-    font-weight: 400;
-    color: $a-bg-color;
-    font-size: 280px;
-    line-height: 280px;
-    top: -40px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__item:nth-child(2) .advantages__text::before {
-    content: "2";
-    position: absolute;
-    font-family: $font;
-    font-weight: 400;
-    color: $a-bg-color;
-    font-size: 280px;
-    line-height: 280px;
-    top: -40px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__item:nth-child(3) .advantages__text::before {
-    content: "3";
-    position: absolute;
-    font-family: $font;
-    font-weight: 400;
-    color: $a-bg-color;
-    font-size: 280px;
-    line-height: 280px;
-    top: -40px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__item:nth-child(4) .advantages__text::before {
-    content: "4";
+  .advantages__item .advantages__text::before {
+    content: counter(number);
     position: absolute;
     font-family: $font;
     font-weight: 400;
