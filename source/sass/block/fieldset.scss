@@ -247,16 +247,10 @@
   }
 }
 
-.fieldset__button-email {
-  background-image: url("/img/envelope-form.svg");
+.fieldset__email-icon {
   position: absolute;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
   top: 11px;
   right: 15px;
-  border: none;
-  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     top: 13px;
@@ -282,16 +276,10 @@
   }
 }
 
-.fieldset__button-phone {
-  background-image: url("/img/phone-form.svg");
+.fieldset__phone-icon {
   position: absolute;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
   top: 11px;
   right: 15px;
-  border: none;
-  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     top: 13px;
