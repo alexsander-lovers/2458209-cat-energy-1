@@ -53,8 +53,14 @@
   }
 }
 
-.nutrition__decoration-slim-icon {
+.nutrition__decoration-slim::before {
+  content: "";
   position: absolute;
+  background-image: url("/img/photo-slim.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
   top: 20px;
   left: 20px;
   z-index: 1;
@@ -114,8 +120,14 @@
   }
 }
 
-.nutrition__decoration-pro-icon {
+.nutrition__decoration-pro::before {
+  content: "";
   position: absolute;
+  background-image: url("/img/photo-pro.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 28px;
   top: 30px;
   left: 20px;
   z-index: 1;
