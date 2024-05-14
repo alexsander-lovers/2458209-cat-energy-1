@@ -88,30 +88,6 @@
 .catalog__item--all-product::after {
   content: "";
   position: absolute;
-  background-image: url("/img/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 20px;
-  left: 125px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    top: 40px;
-    left: 150px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 110px;
-  }
-}
-
-.catalog__item--all-product::before {
-  content: "";
-  position: absolute;
   width: 1000vw;
   border: solid 1px $hover-bg-color;
   top: -5px;
