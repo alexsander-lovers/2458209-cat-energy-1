@@ -28,6 +28,10 @@
   margin-bottom: 16px;
 }
 
+.fieldset__item:disabled {
+  opacity: 0.3;
+}
+
 .fieldset__title {
   font-size: 24px;
   line-height: 26px;
@@ -166,6 +170,11 @@
   left: 8.5px;
 }
 
+.fieldset__mark--radio:hover,
+.fieldset__mark--checkbox:hover {
+  border: 1px solid $mark-radio-color;
+}
+
 .fieldset__mark--checkbox {
   position: absolute;
   width: 26px;
@@ -247,16 +256,10 @@
   }
 }
 
-.fieldset__button-email {
-  background-image: url("/img/envelope-form.svg");
+.fieldset__email-icon {
   position: absolute;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
   top: 11px;
   right: 15px;
-  border: none;
-  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     top: 13px;
@@ -266,6 +269,21 @@
   @media (min-width: $desktop-width) {
     right: 15px;
   }
+}
+
+.fieldset__email-icon:focus,
+.fieldset__phone-icon:focus {
+  color: $btn-bg-color;
+}
+
+.fieldset__email-icon:active,
+.fieldset__phone-icon:active {
+  color: $btn-bg-color;
+}
+
+.fieldset__email-icon:disabled,
+.fieldset__phone-icon:disabled {
+  color: $error-form;
 }
 
 .fieldset__control--width-two {
@@ -282,16 +300,10 @@
   }
 }
 
-.fieldset__button-phone {
-  background-image: url("/img/phone-form.svg");
+.fieldset__phone-icon {
   position: absolute;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
   top: 11px;
   right: 15px;
-  border: none;
-  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     top: 13px;
@@ -301,4 +313,16 @@
   @media (min-width: $desktop-width) {
     right: 15px;
   }
+}
+
+.fieldset__control--input-border:hover {
+  border: 1px solid $line-color;
+}
+
+.fieldset__control--input-border:focus {
+  border: 2px solid $text-color_4;
+}
+
+.fieldset__control--input-border:disabled {
+  border: 1px solid $error-form;
 }

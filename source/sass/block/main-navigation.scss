@@ -81,6 +81,14 @@
   }
 }
 
+.main-navigation__item:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__item:active {
+  opacity: 0.3;
+}
+
 .main-navigation__list:last-of-type .main-navigation__item:last-child {
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

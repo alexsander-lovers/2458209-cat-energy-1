@@ -285,13 +285,8 @@
   }
 }
 
-.additional-products__promo-text::before {
-  content: "";
+.additional-products__icon {
   position: absolute;
-  background-image: url("/img/gift.svg");
-  background-repeat: no-repeat;
-  width: 78px;
-  height: 80px;
   top: 85px;
   left: 100px;
 

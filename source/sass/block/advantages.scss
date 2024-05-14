@@ -76,6 +76,7 @@
   width: 60px;
   height: 60px;
   background-color: $btn-bg-color;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     width: 80px;
