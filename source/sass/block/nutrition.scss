@@ -55,12 +55,12 @@
 
 .nutrition__decoration-slim::before {
   content: "";
-  position: absolute;
   background-image: url("/img/photo-slim.svg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 36px;
   height: 50px;
+  position: absolute;
+  background-repeat: no-repeat;
   top: 20px;
   left: 20px;
   z-index: 1;
@@ -122,12 +122,12 @@
 
 .nutrition__decoration-pro::before {
   content: "";
-  position: absolute;
   background-image: url("/img/photo-pro.svg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   width: 67px;
   height: 28px;
+  position: absolute;
+  background-repeat: no-repeat;
   top: 30px;
   left: 20px;
   z-index: 1;
