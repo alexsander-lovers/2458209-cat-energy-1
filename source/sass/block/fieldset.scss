@@ -190,7 +190,7 @@
 .fieldset__control[type="checkbox"]:checked + .fieldset__mark--checkbox::before {
   content: "";
   position: absolute;
-  background-image: url("/img/check-form.svg");
+  background-image: url("../img/check-form.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 14px;

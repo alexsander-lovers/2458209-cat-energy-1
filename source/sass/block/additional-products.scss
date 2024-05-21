@@ -220,7 +220,7 @@
 .additional-products__promo::after {
   content: "";
   position: absolute;
-  background-image: url("/img/photo-cat-2-mobail.jpg");
+  background-image: url("../img/photo-cat-2-mobail.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -230,22 +230,22 @@
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/photo-cat-2-mobail@2x.jpg");
+    background-image: url("../img/photo-cat-2-mobail@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/photo-cat-2-tablet.jpg");
+    background-image: url("../img/photo-cat-2-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/photo-cat-2-tablet@2x.jpg");
+      background-image: url("../img/photo-cat-2-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/photo-cat-2-desktop.jpg");
+    background-image: url("../img/photo-cat-2-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/photo-cat-2-desktop@2x.jpg");
+      background-image: url("../img/photo-cat-2-desktop@2x.jpg");
     }
   }
 }
