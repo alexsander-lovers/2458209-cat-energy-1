@@ -60,6 +60,7 @@
   width: 36px;
   height: 50px;
   position: absolute;
+  background-repeat: no-repeat;
   top: 20px;
   left: 20px;
   z-index: 1;
@@ -126,6 +127,7 @@
   width: 67px;
   height: 28px;
   position: absolute;
+  background-repeat: no-repeat;
   top: 30px;
   left: 20px;
   z-index: 1;
@@ -253,4 +255,16 @@
   @media (min-width: $tablet-width) {
     margin-left: 25px;
   }
+}
+
+.nutrition__icon:hover {
+  width: 32px;
+}
+
+.nutrition__icon:focus {
+  width: 32px;
+}
+
+.nutrition__icon:active {
+  width: 32px;
 }

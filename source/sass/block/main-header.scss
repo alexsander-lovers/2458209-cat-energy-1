@@ -11,11 +11,12 @@
 }
 
 .main-header__logo-images {
+  display: block;
+
   @media (min-width: $tablet-width) {
     margin-right: 14px;
   }
 }
-
 
 .main-header-list {
   @include list-reset;

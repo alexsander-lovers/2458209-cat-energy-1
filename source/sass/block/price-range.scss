@@ -85,6 +85,14 @@
     left: 278px;
   }
 }
+.price__list-slider:hover::before {
+  background-color: $btn-bg-color;
+}
+
+.price__list-slider:active::before {
+  background-color: $btn-bg-color;
+  opacity: 0.6;
+}
 
 .price__item-wrapper-toogle {
   position: absolute;
@@ -107,6 +115,15 @@
   }
 }
 
+.price__item-wrapper-toogle:hover {
+  border: 2px solid $btn-bg-color;
+}
+
+.price__item-wrapper-toogle:active {
+  border: 2px solid $btn-bg-color;
+  opacity: 0.6;
+}
+
 .price__item-toggle {
   background-image: url("/img/range-toggle.svg");
   position: absolute;
@@ -114,7 +131,7 @@
   width: 24px;
   height: 18px;
   top: 10px;
-  left: 9px;
+  left: 8px;
   border: none;
   background-color: $bg-color;
   z-index: 6;
