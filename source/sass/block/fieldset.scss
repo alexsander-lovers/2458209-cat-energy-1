@@ -117,6 +117,31 @@
   position: relative;
 }
 
+.fieldset__item--email:hover .fieldset__email-icon,
+.fieldset__item--phone:hover .fieldset__phone-icon {
+  color: $btn-bg-color;
+}
+
+.fieldset__item--email:focus .fieldset__email-icon,
+.fieldset__item--phone:focus .fieldset__phone-icon {
+  color: $btn-bg-color;
+}
+
+.fieldset__item--email:active .fieldset__email-icon,
+.fieldset__item--phone:active .fieldset__phone-icon {
+  color: $btn-bg-color;
+}
+
+.fieldset__item--email:disabled .fieldset__email-icon,
+.fieldset__item--phone:disabled .fieldset__phone-icon {
+  color: $error-form;
+}
+
+.fieldset__control--width-one:disabled,
+.fieldset__control--width-two:disabled {
+  border: 2px solid $error-form;
+}
+
 .fieldset__label--text {
   margin-left: 15px;
 }
@@ -269,21 +294,6 @@
   @media (min-width: $desktop-width) {
     right: 15px;
   }
-}
-
-.fieldset__email-icon:focus,
-.fieldset__phone-icon:focus {
-  color: $btn-bg-color;
-}
-
-.fieldset__email-icon:active,
-.fieldset__phone-icon:active {
-  color: $btn-bg-color;
-}
-
-.fieldset__email-icon:disabled,
-.fieldset__phone-icon:disabled {
-  color: $error-form;
 }
 
 .fieldset__control--width-two {

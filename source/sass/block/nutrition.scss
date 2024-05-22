@@ -115,26 +115,34 @@
   opacity: 0.3;
 }
 
-.nutrition__icon {
-  margin-left: 15px;
+.nutrition__link::after {
+  content: "";
+  background-image: url("../img/arrow.svg");
+  background-size: 100% 100%;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 2px;
+  left: 100px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 25px;
+    top: 8px;
+    left: 128px;
   }
 }
 
-.nutrition__icon:hover {
+.nutrition__link:hover::after  {
   width: 32px;
 }
 
-.nutrition__icon:focus {
+.nutrition__link:focus::after {
   width: 32px;
 }
 
-.nutrition__icon:active {
+.nutrition__link:active::after {
   width: 32px;
 }
-
 
 .nutrition__title--slim {
   position: relative;
