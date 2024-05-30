@@ -5,4 +5,3 @@ burger.onclick = function() {
   this.classList.toggle('active');
   navigation.classList.toggle('active');
 };
-
