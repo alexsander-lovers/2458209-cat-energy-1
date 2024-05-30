@@ -1,4 +1,8 @@
-document.querySelector('.burger-menu').addEventListener('click', function() {
+let navigation = document.querySelector('.main-navigation');
+let burger = document.querySelector('.burger-menu');
+navigation.classList.remove('active');
+burger.onclick = function() {
   this.classList.toggle('active');
-  document.querySelector('.main-navigation').classList.toggle('active');
-})
+  navigation.classList.toggle('active');
+};
+

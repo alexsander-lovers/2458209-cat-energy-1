@@ -1,1 +1,1 @@
-document.querySelector(".burger-menu").addEventListener("click",(function(){this.classList.toggle("active"),document.querySelector(".main-navigation").classList.toggle("active")}));
+let navigation=document.querySelector(".main-navigation"),burger=document.querySelector(".burger-menu");navigation.classList.remove("active"),burger.onclick=function(){this.classList.toggle("active"),navigation.classList.toggle("active")};

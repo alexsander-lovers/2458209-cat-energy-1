@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import svgo from 'gulp-svgmin';
 import squoosh from 'gulp-libsquoosh';
 import svgstore from 'gulp-svgstore';
-// import del from 'del';    ------не работает----
+import { deleteAsync } from 'del';
 
 // Styles
 
@@ -28,9 +28,11 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// const clean = () => {
-//   return del('build')  ------не работает----
-// };
+// clean
+
+export const clean = async () => {
+  return await deleteAsync(['build']);
+};
 
 //html
 
@@ -40,10 +42,9 @@ const html = () => {
   .pipe(gulp.dest('build'));
 }
 
+//scripts
 
-//skripts
-
-const skripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
@@ -85,7 +86,7 @@ const sprite = () => {
   .pipe(svgstore({
     inline: true
   }))
-  .pipe(rename(sprite.svg))
+  .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
 }
 
@@ -93,7 +94,7 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*{woff2,woff}',
+    'source/fonts/**/*{woff2,woff}',
     'source/*iso',
     'source/*.webmanifest'
   ],{
@@ -121,23 +122,22 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(skripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
-
 
 //build
 
 export const build = gulp.series(
-  // clean, ------не работает----
+  clean,
   copy,
   optimizeImg,
   gulp.parallel(
     styles,
     html,
-    skripts,
+    scripts,
     svg,
-    // sprite,  ------не работает----
+    sprite,
     createWebp
   ),
 );
@@ -145,15 +145,15 @@ export const build = gulp.series(
 // default
 
 export default gulp.series(
-  // clean, ------не работает----
+  clean,
   copy,
   copyImg,
   gulp.parallel(
     styles,
     html,
-    skripts,
+    scripts,
     svg,
-    // sprite, ------не работает----
+    sprite,
     createWebp
   ),
   gulp.series(
