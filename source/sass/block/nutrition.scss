@@ -39,6 +39,7 @@
 }
 
 .nutrition__title--pro {
+  position: relative;
   margin-left: 47px;
 
   @media (min-width: $tablet-width) {
@@ -132,7 +133,7 @@
   }
 }
 
-.nutrition__link:hover::after  {
+.nutrition__link:hover::after {
   width: 32px;
 }
 
@@ -201,10 +202,6 @@
     top: -50px;
     left: 15px;
   }
-}
-
-.nutrition__title--pro {
-  position: relative;
 }
 
 .nutrition__title--pro::after {
