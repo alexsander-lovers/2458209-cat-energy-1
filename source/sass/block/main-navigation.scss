@@ -151,3 +151,13 @@
     background-color: $btn-bg-color;
   }
 }
+
+.no-js {
+  position: static;
+  margin: 0;
+  transform: translateX(0);
+}
+
+.burger--no-js {
+  display: none;
+}
