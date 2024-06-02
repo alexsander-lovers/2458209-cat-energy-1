@@ -65,32 +65,46 @@
   }
 }
 
-.price__list-slider::before {
+.price__item-wrapper {
+  position: relative;
+}
+
+.price__item-wrapper--line::before {
   content: "";
   position: absolute;
+  background-repeat: no-repeat;
   width: 4px;
   height: 256px;
   background-color: $text-color_6;
   border-radius: 2px;
-  top: 0;
-  left: 140px;
+  bottom: 0;
+  left: 50%;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
     height: 512px;
-    left: 350px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 278px;
   }
 }
 
-.price__list-slider:hover::before {
+.price__item-toggle {
+  mask-image: url("../img/range-toggle.svg");
+  background-color: $text-color_6;
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  top: 10px;
+  left: 8px;
+  border: none;
+  z-index: 6;
+}
+
+.price__item-wrapper--line:hover::before,
+.price__item-toggle:hover {
   background-color: $btn-bg-color;
 }
 
-.price__list-slider:active::before {
+.price__item-wrapper--line:active::before,
+.price__item-toggle:hover {
   background-color: $btn-bg-color;
   opacity: 0.6;
 }
@@ -102,17 +116,12 @@
   border-radius: 50%;
   background-color: $bg-color;
   border: 2px solid $text-color_6;
-  top: 125px;
-  left: 120px;
+  bottom: 110px;
+  left: calc(50% - 19px);
   z-index: 6;
 
   @media (min-width: $tablet-width) {
-    top: 250px;
-    left: 330px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 260px;
+    bottom: 200px;
   }
 }
 
@@ -123,17 +132,4 @@
 .price__item-wrapper-toogle:active {
   border: 2px solid $btn-bg-color;
   opacity: 0.6;
-}
-
-.price__item-toggle {
-  background-image: url("/img/range-toggle.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px;
-  top: 10px;
-  left: 8px;
-  border: none;
-  background-color: $bg-color;
-  z-index: 6;
 }

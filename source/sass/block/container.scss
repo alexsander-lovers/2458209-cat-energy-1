@@ -61,4 +61,14 @@
     padding-top: 60px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $bg-color;
+    width: 565px;
+    padding: 60px 80px 60px 80px;
+    margin-bottom: 0;
+    top: 120px;
+    margin-left: 100px;
+  }
 }

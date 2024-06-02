@@ -83,7 +83,6 @@
   flex-direction: column;
   align-self: flex-end;
   gap: 0;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $a-bg-color;

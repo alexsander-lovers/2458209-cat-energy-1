@@ -1,9 +1,16 @@
+.location {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .location--another-background {
   background-color: $a-bg-color;
 }
 
 .location__title {
   margin: 0;
+  width: 140px;
   text-align: left;
   font-size: 16px;
   line-height: 20px;
@@ -21,6 +28,7 @@
 
 .location__link {
   display: block;
+  width: 140px;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -31,10 +39,17 @@
     text-align: right;
     font-size: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .location__link--right {
-  text-align: right;
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
 
   @media (min-width: $desktop-width) {
     text-align: left;

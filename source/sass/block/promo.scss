@@ -39,7 +39,7 @@
 
 .promo::after {
   content: "";
-  background-image: url("/img/photo-cat-mobail.jpg");
+  background-image: url("../img/photo-cat-mobail.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
@@ -49,7 +49,7 @@
   height: 302px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/photo-cat-mobail@2x.jpg");
+    background-image: url("../img/photo-cat-mobail@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
@@ -62,10 +62,10 @@
     left: 50%;
     width: 50%;
     height: 694px;
-    background-image: url("/img/photo-cat-desktop.jpg");
+    background-image: url("../img/photo-cat-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/photo-cat-desktop@2x.jpg");
+      background-image: url("../img/photo-cat-desktop@2x.jpg");
     }
   }
 }
