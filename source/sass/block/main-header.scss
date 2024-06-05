@@ -56,6 +56,10 @@
   opacity: 0.6;
 }
 
+.main-header__link {
+  width: 111px;
+}
+
 .main-header__link:hover {
   opacity: 0.8;
 }
@@ -70,7 +74,8 @@
 
 .main-header__logo-images-text {
   @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+    margin-top: 14px;
+    width: 146px;
+    height: 38px;
   }
 }

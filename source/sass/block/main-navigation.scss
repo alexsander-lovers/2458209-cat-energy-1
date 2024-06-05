@@ -26,7 +26,7 @@
 .main-navigation__list {
   @include list-reset;
   margin-top: 65px;
-  padding: 22px 0;
+  padding: 23px 0;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
@@ -59,7 +59,11 @@
   margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 33px;
+    margin-top: 14px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -87,7 +91,13 @@
 
 .main-navigation__list:last-of-type .main-navigation__item:last-child {
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-top: 14px;
+    margin-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+    margin-left: 2px;
   }
 }
 
@@ -102,13 +112,17 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 0;
+    padding: 3px 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-navigation__link-color {
     color: $bg-color;
+    font-size: 20px;
+    line-height: 29px;
   }
 }
 
@@ -117,7 +131,7 @@
   .main-navigation__link--current::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 0;
     right: 0;
     width: 100%;
@@ -130,7 +144,7 @@
   .main-navigation__link--current::after {
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: -4px;
     left: 0;
     right: 0;
     width: 100%;

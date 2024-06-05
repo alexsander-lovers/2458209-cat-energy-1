@@ -2,11 +2,11 @@
   background-color: $price-bg-color;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 45%, rgba(255, 255, 255, 1) 45%);
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 44%, rgba(255, 255, 255, 1) 44%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 78%, rgba(255, 255, 255, 1) 78%);
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 79%, rgba(255, 255, 255, 1) 79%);
   }
 }
 
@@ -51,6 +51,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 146px;
+    padding-top: 0;
+    margin-top: -8px;
   }
 }
 
@@ -79,7 +81,7 @@
   gap: 0 32px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 27px;
   }
 }
 
@@ -90,6 +92,11 @@
 .price__icon {
   grid-column: 1 / 2;
   grid-row: 1 / 1;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
 }
 
 .price__item-text {
@@ -101,6 +108,11 @@
   color: $text-color;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .price__item-desckription {
@@ -109,6 +121,11 @@
   text-align: center;
   color: $text-color;
   margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .price__title-nutrition {
@@ -124,6 +141,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     text-align: right;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 
