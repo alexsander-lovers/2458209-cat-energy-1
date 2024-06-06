@@ -14,10 +14,9 @@
 }
 
 .nutrition__title {
-  margin: 0;
+  margin: 0 0 29px 8px;
   text-align: center;
   padding-top: 29px;
-  margin: 0 0 29px 8px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -45,7 +44,11 @@
   margin-left: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 35px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 36;
   }
 }
 
