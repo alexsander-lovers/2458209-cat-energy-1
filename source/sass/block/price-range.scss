@@ -85,7 +85,7 @@
   position: relative;
 }
 
-.price__item-wrapper--line::before {
+.price__item-range--line::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
@@ -120,12 +120,12 @@
   }
 }
 
-.price__item-wrapper--line:hover::before,
+.price__item-range--line:hover::before,
 .price__item-toggle:hover {
   background-color: $btn-bg-color;
 }
 
-.price__item-wrapper--line:active::before,
+.price__item-range--line:active::before,
 .price__item-toggle:hover {
   background-color: $btn-bg-color;
   opacity: 0.6;
