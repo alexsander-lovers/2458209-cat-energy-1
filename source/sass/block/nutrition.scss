@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 36;
+    margin-left: 36px;
   }
 }
 
@@ -253,15 +253,15 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 280px;
+    width: 268px;
     height: 112px;
     top: 58px;
     left: unset;
-    right: -41px;
+    right: -33px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 145px;
+    width: 137px;
     height: 56px;
     top: -9px;
     left: -60px;
