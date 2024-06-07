@@ -26,9 +26,10 @@
           </li>
           <li class="main-header-item">
             <a class="main-header__link" href="index.html">
-              <svg class="main-header__logo-images-text" xmlns="http://www.w3.org/2000/svg" width="101" height="18" fill="none" aria-label="Текстовое название сайта Кот Энерджи.">
-                <use xlink:href="img/sprite.svg#logo-text"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+                <img class="main-header__logo-images-text" src="img/logo-text.svg" width="101" height="18" alt="Текстовый логотип сайта Кот Энерджи.">
+              </picture>
             </a>
           </li>
           <li class="main-header-item">
@@ -240,6 +241,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
