@@ -2,6 +2,10 @@
   @include list-reset;
   position: relative;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 104px;
+  }
 }
 
 .price__item-slaider {
@@ -33,7 +37,11 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    height: 522px;
+    height: 570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 504px;
   }
 }
 
@@ -41,6 +49,10 @@
   position: absolute;
   bottom: 12px;
   transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    bottom: -49px;
+  }
 }
 
 .price__item-slaider--left img {
@@ -50,7 +62,7 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-    height: 512px;
+    height: 605px;
   }
 }
 
@@ -61,15 +73,19 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-    height: 512px;
+    height: 610px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 601px;
   }
 }
 
-.price__item-wrapper {
+.price__item-range {
   position: relative;
 }
 
-.price__item-wrapper--line::before {
+.price__item-range--line::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
@@ -77,12 +93,13 @@
   height: 256px;
   background-color: $text-color_6;
   border-radius: 2px;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
     height: 512px;
+    bottom: -2px;
   }
 }
 
@@ -93,17 +110,22 @@
   width: 24px;
   height: 18px;
   top: 10px;
-  left: 8px;
+  left: 9px;
   border: none;
   z-index: 6;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 8px;
+  }
 }
 
-.price__item-wrapper--line:hover::before,
+.price__item-range--line:hover::before,
 .price__item-toggle:hover {
   background-color: $btn-bg-color;
 }
 
-.price__item-wrapper--line:active::before,
+.price__item-range--line:active::before,
 .price__item-toggle:hover {
   background-color: $btn-bg-color;
   opacity: 0.6;
@@ -116,12 +138,12 @@
   border-radius: 50%;
   background-color: $bg-color;
   border: 2px solid $text-color_6;
-  bottom: 110px;
-  left: calc(50% - 19px);
+  bottom: 116px;
+  left: calc(50% - 23px);
   z-index: 6;
 
   @media (min-width: $tablet-width) {
-    bottom: 200px;
+    bottom: 233px;
   }
 }
 

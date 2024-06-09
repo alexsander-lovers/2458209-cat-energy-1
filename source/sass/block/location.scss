@@ -23,6 +23,11 @@
     font-size: 20px;
     line-height: 26px;
     width: 175px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -38,21 +43,32 @@
     width: 188px;
     text-align: right;
     font-size: 16px;
+    margin-top: 0;
+    margin-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-right: -34px;
   }
 }
 
 .location__link--right {
   @media (min-width: $tablet-width) {
     text-align: right;
+    margin-top: -5px;
   }
 
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.location__text {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 19px;
   }
 }
 

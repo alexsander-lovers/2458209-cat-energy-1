@@ -3,21 +3,20 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 53px 53px;
+    padding: 77px 63px 59px 53px;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 61px 55px 52px;
-    margin-bottom: 71px;
+    padding: 77px 30px 55px 52px;
+    margin-bottom: 76px;
   }
 }
 
 .nutrition__title {
-  margin: 0;
+  margin: 0 0 29px 8px;
   text-align: center;
-  padding-top: 20px;
-  margin-bottom: 29px;
+  padding-top: 29px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -28,6 +27,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-top: 0;
+    margin-left: 0;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -35,15 +35,20 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    margin-bottom: 73px;
   }
 }
 
 .nutrition__title--pro {
   position: relative;
-  margin-left: 47px;
+  margin-left: 39px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 36px;
   }
 }
 
@@ -66,6 +71,7 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    margin-bottom: 16px;
   }
 }
 
@@ -91,6 +97,7 @@
   color: $text-color;
   text-transform: uppercase;
   margin-left: 20px;
+  padding-top: 5px;
   padding-bottom: 22px;
   margin-right: 15px;
   position: relative;
@@ -100,6 +107,8 @@
     font-size: 20px;
     line-height: 30px;
     margin-left: 0;
+    padding-top: 12px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,12 +133,12 @@
   height: 12px;
   position: absolute;
   background-repeat: no-repeat;
-  top: 2px;
+  top: 6px;
   left: 100px;
 
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: 128px;
+    top: 22px;
+    left: 130px;
   }
 }
 
@@ -152,8 +161,8 @@
 .nutrition__title--slim::after {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 14px;
+  top: 23px;
+  left: 12px;
   width: 50px;
   height: 50px;
   background-color: $btn-bg-color;
@@ -163,7 +172,7 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: -50px;
+    top: 14px;
     left: unset;
     right: 0;
   }
@@ -171,7 +180,7 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: -50px;
+    top: -30px;
     left: 0;
   }
 }
@@ -184,22 +193,22 @@
   height: 50px;
   position: absolute;
   background-repeat: no-repeat;
-  top: 10px;
-  left: 20px;
+  top: 20px;
+  left: 19px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 197px;
-    top: -59px;
+    top: 2px;
     left: unset;
-    right: 15px;
+    right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    top: -50px;
+    top: -34px;
     left: 15px;
   }
 }
@@ -207,8 +216,8 @@
 .nutrition__title--pro::after {
   content: "";
   position: absolute;
-  top: 16px;
-  left: -26px;
+  top: 23px;
+  left: -18px;
   width: 50px;
   height: 50px;
   background-color: $btn-bg-color;
@@ -218,7 +227,7 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: -50px;
+    top: 13px;
     left: unset;
     right: 0;
   }
@@ -226,8 +235,8 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: -40px;
-    left: 0;
+    top: -30px;
+    left: -36px;
   }
 }
 
@@ -239,22 +248,22 @@
   height: 28px;
   position: absolute;
   background-repeat: no-repeat;
-  top: 25px;
-  left: -34px;
+  top: 34px;
+  left: -26px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 280px;
+    width: 268px;
     height: 112px;
-    top: -16px;
+    top: 58px;
     left: unset;
-    right: -35px;
+    right: -33px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 145px;
+    width: 137px;
     height: 56px;
-    top: -10px;
-    left: -35px;
+    top: -9px;
+    left: -60px;
   }
 }

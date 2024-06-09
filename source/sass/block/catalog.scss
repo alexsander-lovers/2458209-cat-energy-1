@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 45px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   align-items: center;
-  gap: 17px 0;
+  gap: 21px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
 
 .catalog__item:not(:last-child) {
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgba(242, 242, 242, 1) 90%, rgba(255, 255, 255, 1) 53%);
+    background: linear-gradient(0deg, rgba(242, 242, 242, 1) 84%, rgba(255, 255, 255, 1) 84%);
   }
 }
 
