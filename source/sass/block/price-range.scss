@@ -109,8 +109,8 @@
   position: absolute;
   width: 24px;
   height: 18px;
-  top: 10px;
-  left: 9px;
+  top: 11px;
+  left: 8px;
   border: none;
   z-index: 6;
 
@@ -139,7 +139,7 @@
   background-color: $bg-color;
   border: 2px solid $text-color_6;
   bottom: 116px;
-  left: calc(50% - 23px);
+  left: calc(50% - 20px);
   z-index: 6;
 
   @media (min-width: $tablet-width) {
