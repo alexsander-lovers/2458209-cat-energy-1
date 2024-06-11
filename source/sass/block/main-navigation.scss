@@ -28,6 +28,7 @@
   margin-top: 65px;
   padding: 23px 0;
   background-color: $bg-color;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -72,6 +73,8 @@
   content: "";
   position: absolute;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   border: solid 1px $n-bg-color;
   top: -22px;
   left: 0;
@@ -162,7 +165,7 @@
   .main-navigation__link--current-border::after {
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: -5px;
     left: 0;
     right: 0;
     width: 100%;

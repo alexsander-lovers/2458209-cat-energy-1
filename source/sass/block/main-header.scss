@@ -71,11 +71,3 @@
 .main-header__link:active {
   opacity: 0.6;
 }
-
-.main-header__logo-images-text {
-  @media (min-width: $desktop-width) {
-    margin-top: 14px;
-    width: 146px;
-    height: 38px;
-  }
-}

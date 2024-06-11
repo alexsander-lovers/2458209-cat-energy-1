@@ -33,12 +33,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 324px);
-    gap: 45px 60px;
+    gap: 60px 60px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -52,6 +54,7 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
     grid-template-columns: repeat(2, 125px);
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
