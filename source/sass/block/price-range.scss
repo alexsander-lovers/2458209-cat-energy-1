@@ -120,17 +120,6 @@
   }
 }
 
-.price__item-range--line:hover::before,
-.price__item-toggle:hover {
-  background-color: $btn-bg-color;
-}
-
-.price__item-range--line:active::before,
-.price__item-toggle:hover {
-  background-color: $btn-bg-color;
-  opacity: 0.6;
-}
-
 .price__item-wrapper-toogle {
   position: absolute;
   width: 40px;
@@ -143,15 +132,49 @@
   z-index: 6;
 
   @media (min-width: $tablet-width) {
-    bottom: 233px;
+    bottom: 232px;
+    left: calc(50% - 22px);
   }
+}
+
+.price__item-range--line:hover::before {
+  background-color: $btn-bg-color;
+}
+
+.price__item-range--line:focus::before {
+  background-color: $btn-bg-color;
+}
+
+.price__item-range--line:active::before {
+  background-color: $btn-bg-color;
+  opacity: 0.6;
 }
 
 .price__item-wrapper-toogle:hover {
   border: 2px solid $btn-bg-color;
 }
 
+.price__item-wrapper-toogle:focus {
+  border: 2px solid $btn-bg-color;
+}
+
 .price__item-wrapper-toogle:active {
   border: 2px solid $btn-bg-color;
+  opacity: 0.6;
+}
+
+.price__item-wrapper-toogle:hover .price__item-toggle {
+  border: 2px solid $btn-bg-color;
+  background-color: $btn-bg-color;
+}
+
+.price__item-wrapper-toogle:focus .price__item-toggle {
+  border: 2px solid $btn-bg-color;
+  background-color: $btn-bg-color;
+}
+
+.price__item-wrapper-toogle:active .price__item-toggle {
+  border: 2px solid $btn-bg-color;
+  background-color: $btn-bg-color;
   opacity: 0.6;
 }

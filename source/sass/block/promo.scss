@@ -39,9 +39,10 @@
 
 .promo::after {
   content: "";
-  background-image: url("../img/photo-cat-mobail.jpg");
+  background: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url("../img/photo-cat-mobail.jpg");
   position: absolute;
   top: 0;
   left: 0;

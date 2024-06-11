@@ -42,6 +42,10 @@
 
 .form__fieldset--distance-width {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .form__wrapper {
