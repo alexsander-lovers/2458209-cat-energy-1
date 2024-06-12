@@ -73,7 +73,7 @@
   position: absolute;
   width: 1000vw;
   border: solid 1px $hover-bg-color;
-  top: -12px;
+  top: 0;
   left: -300px;
 
   @media (min-width: $tablet-width) {

@@ -6,6 +6,7 @@
   .fieldset__list--contact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: -16px;
   }
 }
@@ -18,9 +19,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    width: 1125px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 325px 326px 323px 300px;
     gap: 0;
   }
 }
@@ -62,7 +62,7 @@
   margin: 0;
   padding: 0;
   padding-right: 20px;
-  margin-top: 6px;
+  margin-top: 4px;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
@@ -155,10 +155,27 @@
 }
 
 .fieldset__label--text {
-  margin-left: 19px;
+  margin-left: 22px;
+
 
   @media (min-width: $tablet-width) {
     margin-left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+    max-width: 203px;
+    display: inline-block;
+  }
+}
+
+.fieldset__label--text-another {
+  width: 190px;
+  text-align: left;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 240px;
   }
 }
 
@@ -180,21 +197,37 @@
 }
 
 .fieldset__control--textarea {
-  padding: 7px 0 0 15px;
+  padding: 7px 0 45px 15px;
   box-sizing: border-box;
+  display: block;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 9px 0 10px 20px;
+    padding: 9px 0 15px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 10px 20px;
+    padding: 9px 0 10px 20px;
   }
+}
+
+.fieldset__control--textarea:hover {
+  border: 1px solid $mark-radio-color;
+}
+
+.fieldset__control--textarea:focus {
+  border-color: $text-color_4;
+  outline: 1px solid;
+}
+
+.fieldset__control--textarea:active {
+  border-color: $text-color_4;
+  outline: 1px solid;
 }
 
 .fieldset__label--radio {
   position: relative;
+  margin-left: 29px;
 }
 
 .fieldset__label--checkbox {
@@ -236,9 +269,33 @@
   }
 }
 
-.fieldset__mark--radio:hover,
-.fieldset__mark--checkbox:hover {
+.fieldset__control:hover + .fieldset__mark--radio {
   border: 1px solid $mark-radio-color;
+}
+
+.fieldset__control:focus + .fieldset__mark--radio {
+  border-color: $text-color_4;
+  outline: 1px solid;
+}
+
+.fieldset__control:active + .fieldset__mark--radio {
+  border-color: $text-color_4;
+  outline: 1px solid;
+}
+
+
+.fieldset__control:hover + .fieldset__mark--checkbox {
+  border: 1px solid $mark-radio-color;
+}
+
+.fieldset__control:focus + .fieldset__mark--checkbox {
+  border-color: $text-color_4;
+  outline: 1px solid;
+}
+
+.fieldset__control:active + .fieldset__mark--checkbox {
+  border-color: $text-color_4;
+  outline: 1px solid;
 }
 
 .fieldset__mark--checkbox {
@@ -284,28 +341,28 @@
 }
 
 .fieldset__control--width-one {
-  width: 225px;
+  width: 215px;
+  margin-left: 11px;
 
   @media (min-width: $tablet-width) {
-    width: 557px;
+    width: 550px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 506px;
-    box-sizing: border-box;
+    width: 493px;
   }
 }
 
 .fieldset__control--width-two {
-  width: 203px;
+  width: 198px;
+  margin-left: 11px;
 
   @media (min-width: $tablet-width) {
-    width: 536px;
+    width: 529px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
-    box-sizing: border-box;
+    width: 474px;
   }
 }
 
@@ -385,7 +442,13 @@
 }
 
 .fieldset__control--input-border:focus {
-  border: 2px solid $text-color_4;
+  border-color: $text-color_4;
+  outline: 1px solid;
+}
+
+.fieldset__control--input-border:active {
+  border-color: $text-color_4;
+  outline: 1px solid;
 }
 
 .fieldset__control--input-border:disabled {

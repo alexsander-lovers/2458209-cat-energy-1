@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 84px 0 66px 0;
+    margin: 89px 0 66px;
   }
 }
 
@@ -97,18 +97,16 @@
   color: $text-color_6;
 }
 
-
-.main-footer__social-icon:hover {
+.main-footer__social:hover .main-footer__social-icon {
   color: $btn-bg-color;
 }
 
-.main-footer__social-icon:focus {
+.main-footer__social:focus .main-footer__social-icon {
   color: $btn-bg-color;
 }
 
-.main-footer__social-icon:active {
+.main-footer__social:active .main-footer__social-icon {
   color: $btn-bg-color;
-  opacity: 0.3;
 }
 
 .main-footer__developer-logo {
@@ -135,12 +133,21 @@
   }
 }
 
-.main-footer__developer-link:hover {
-  opacity: 0.8;
+.main-footer__developer-link:hover .main-footer__developer-icon {
+  color: $btn-bg-color;
 }
 
-.main-footer__developer-link:focus {
-  opacity: 0.6;
+.main-footer__developer-link:focus .main-footer__developer-icon {
+  color: $btn-bg-color;
+}
+
+.main-footer__developer-link:active .main-footer__developer-icon {
+  color: $btn-bg-color;
+  opacity: 0.3;
+}
+
+.main-footer__developer-link:hover {
+  opacity: 0.8;
 }
 
 .main-footer__developer-link:active {
