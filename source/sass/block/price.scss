@@ -116,7 +116,7 @@
   font-size: 24px;
   line-height: 24px;
   margin-top: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   font-family: $font;
   text-align: center;
   color: $text-color;
@@ -133,12 +133,12 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $text-color;
-  background-color: $price-bg-color;
+  color: #000;
+  background-color: #eaeaea;
   padding-left: 17px;
-  padding-right: 10px;
-  bottom: -14px;
-  left: 15px;
+  padding-right: 17px;
+  bottom: -18px;
+  left: 16px;
   position: absolute;
 
   @media (min-width: $tablet-width) {
@@ -153,10 +153,20 @@
     }
   }
 
-
   @media (min-width: $desktop-width) {
     background-color: $price-bg-color;
   }
+}
+.price__item-text--weight {
+  width: 39px;
+  min-height: 24px;
+  margin: 15px auto;
+}
+
+.price__item-text--day {
+  width: 84px;
+  min-height: 24px;
+  margin: 15px auto;
 }
 
 .price__item-desckription--width {
@@ -205,6 +215,8 @@
     display: block;
     font-size: 20px;
     margin-top: 9px;
+    width: 90px;
+    height: 20px;
   }
 
   @media (min-width: $desktop-width) {
