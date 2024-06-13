@@ -133,8 +133,8 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: #000;
-  background-color: #eaeaea;
+  color: $text-color;
+  background-color: $p-bg-color;
   padding-left: 17px;
   padding-right: 17px;
   bottom: -18px;
@@ -157,16 +157,27 @@
     background-color: $price-bg-color;
   }
 }
+
 .price__item-text--weight {
   width: 39px;
   min-height: 24px;
   margin: 15px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 49px;
+    min-height: 37px;
+  }
 }
 
 .price__item-text--day {
   width: 84px;
   min-height: 24px;
   margin: 15px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    min-height: 37px;
+  }
 }
 
 .price__item-desckription--width {
@@ -215,8 +226,6 @@
     display: block;
     font-size: 20px;
     margin-top: 9px;
-    width: 90px;
-    height: 20px;
   }
 
   @media (min-width: $desktop-width) {
