@@ -134,8 +134,8 @@
   color: $btn-bg-color;
 }
 
-.fieldset__item--email:focus .fieldset__email-icon,
-.fieldset__item--phone:focus .fieldset__phone-icon {
+.fieldset__control:focus + .fieldset__email-icon,
+.fieldset__control:focus + .fieldset__phone-icon {
   color: $btn-bg-color;
 }
 

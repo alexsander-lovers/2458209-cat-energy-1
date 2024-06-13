@@ -137,6 +137,24 @@
   }
 }
 
+.price__item-toggle:hover {
+  background-color: $btn-bg-color;
+}
+
+.price__item-slaider:hover .price__item-toggle {
+  background-color: $btn-bg-color;
+}
+
+.price__item-slaider:focus .price__item-toggle {
+  background-color: $btn-bg-color;
+}
+
+.price__item-slaider:active .price__item-toggle {
+  background-color: $btn-bg-color;
+  opacity: 0.6;
+}
+
+
 .price__item-range--line:hover::before {
   background-color: $btn-bg-color;
 }
@@ -160,21 +178,5 @@
 
 .price__item-wrapper-toogle:active {
   border: 2px solid $btn-bg-color;
-  opacity: 0.6;
-}
-
-.price__item-wrapper-toogle:hover .price__item-toggle {
-  border: 2px solid $btn-bg-color;
-  background-color: $btn-bg-color;
-}
-
-.price__item-wrapper-toogle:focus .price__item-toggle {
-  border: 2px solid $btn-bg-color;
-  background-color: $btn-bg-color;
-}
-
-.price__item-wrapper-toogle:active .price__item-toggle {
-  border: 2px solid $btn-bg-color;
-  background-color: $btn-bg-color;
   opacity: 0.6;
 }
