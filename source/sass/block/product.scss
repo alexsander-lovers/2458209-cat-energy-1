@@ -20,7 +20,7 @@
   line-height: 20px;
   font-weight: 400;
   font-family: $font;
-  color: $text-color_2;
+  color: $text-color_1;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -191,4 +191,5 @@
 
 .product__button--all-cards:active {
   background-color: $hover-bg-color;
+  color: rgba($text-color_4, 1);
 }

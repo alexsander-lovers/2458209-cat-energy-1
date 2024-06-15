@@ -36,7 +36,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-top: -4px;
-    margin-left: 38px;
+    margin-left: 39px;
     padding: 0;
     background: none;
     overflow: visible;
@@ -134,7 +134,6 @@
     line-height: 29px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .main-navigation__link--current::after {

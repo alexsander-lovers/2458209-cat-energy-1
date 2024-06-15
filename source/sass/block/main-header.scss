@@ -18,7 +18,7 @@
   }
 }
 
-.main-header-list {
+.main-header__list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@
   }
 }
 
-.main-header-item {
+.main-header__item {
   display: flex;
   justify-content: center;
   align-items: center;

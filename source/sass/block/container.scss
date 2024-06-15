@@ -33,7 +33,8 @@
 .container--nutrition {
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 80px;
+    gap: 76px;
+    flex-wrap: wrap;
   }
 }
 
@@ -47,28 +48,5 @@
     display: grid;
     grid-template-columns: 896px 245px;
     gap: 0 80px;
-  }
-}
-
-.container--location {
-  display: flex;
-  align-items: center;
-  padding-top: 26px;
-  margin-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    padding-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    background-color: $bg-color;
-    width: 565px;
-    padding: 60px 80px 60px 80px;
-    margin-bottom: 0;
-    top: 76px;
-    margin-left: 109px;
   }
 }

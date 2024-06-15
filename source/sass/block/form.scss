@@ -19,16 +19,16 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 67px;
   }
 }
 
 .form__fieldset--distance {
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -41,10 +41,14 @@
 }
 
 .form__fieldset--distance-width {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
   }
 }
 
@@ -61,7 +65,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-bottom: 58px;
+    margin-bottom: 74px;
     justify-content: space-between;
   }
 }
@@ -79,7 +83,7 @@
 @media (min-width: $desktop-width) {
   .form__wrapper--tablet {
     gap: 0 415px;
-    margin-bottom: 99px;
+    margin-bottom: 78px;
   }
 }
 
@@ -135,8 +139,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0;
-    padding-left: 27px;
+    padding: 8px 0 10px 27px;
+    box-sizing: border-box;
   }
 }
 
@@ -145,7 +149,7 @@
   position: absolute;
   border: 1px solid $n-bg-color;
   width: 1000vw;
-  top: -20px;
+  top: -27px;
   left: -300px;
 
   @media (min-width: $tablet-width) {
@@ -157,7 +161,7 @@
   content: "";
   position: absolute;
   width: 1000vw;
-  bottom: -20px;
+  bottom: -22px;
   left: -300px;
   border: 1px solid $n-bg-color;
 

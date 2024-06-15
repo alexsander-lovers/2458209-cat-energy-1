@@ -10,7 +10,7 @@
   }
 }
 
-.price-wrapper {
+.price__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 436px 560px;
@@ -18,7 +18,7 @@
   }
 }
 
-.price-wrapper__another {
+.price__wrapper-another {
   @media (min-width: $tablet-width) {
     width: 708px;
     display: grid;
@@ -134,7 +134,7 @@
   line-height: 12px;
   text-align: center;
   color: $text-color;
-  background-color: $p-bg-color;
+  background-color: $price-bg-color;
   padding-left: 17px;
   padding-right: 17px;
   bottom: -18px;
@@ -144,7 +144,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    bottom: -3px;
+    bottom: -4px;
     left: 15px;
     background-color: $bg-color;
 
@@ -184,7 +184,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 10px;
     padding-right: 10px;
-    bottom: -4px;
+    bottom: -6px;
     left: 9px;
   }
 }
@@ -195,6 +195,7 @@
   line-height: 20px;
   margin-bottom: 20px;
   font-family: $font;
+  font-weight: 400;
   text-align: center;
   color: $text-color;
   text-transform: uppercase;
